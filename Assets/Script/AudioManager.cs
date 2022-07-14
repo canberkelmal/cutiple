@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class AudioManager : MonoBehaviour
 {
+    public AudioListener audioListener;
     public Sound[] sounds;
     public static AudioManager instance;
     void Awake()
@@ -29,7 +30,21 @@ public class AudioManager : MonoBehaviour
     }
     void Start(){
         Play("Theme");
+        
+        /* if(PlayerPrefs.GetInt("music")==1){
+            Play("Theme");
+        }
+        if(PlayerPrefs.GetInt("music")==0){
+            Stop("Theme");
+        }
+        if(PlayerPrefs.GetInt("volume")==0){
+            audioListener.enabled=false;
+        }
+        if(PlayerPrefs.GetInt("volume")==1){
+            audioListener.enabled=true;
+        } */
     }
+    
 
 
     public void Play(string name)
@@ -42,5 +57,16 @@ public class AudioManager : MonoBehaviour
         }
         
         s.source.Play();
+    }
+    public void Stop(string name)
+    {
+        Sound s = Array.Find(sounds, sound => sound.name == name);
+        if(s == null)
+        {
+            Debug.LogWarning("Sound: " + name + " not found!");
+            return;
+        }
+        
+        s.source.Stop();
     }
 }

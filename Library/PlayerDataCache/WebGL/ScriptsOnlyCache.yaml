@@ -29,6 +29,7 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.Image
     - UnityEngine.UI.Shadow
     - UnityEngine.UI.Text
+    - UnityEngine.UI.Toggle
   serializedClasses:
     Assembly-CSharp:
     - Sound
@@ -44,10 +45,17 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.MaskableGraphic/CullStateChangedEvent
     - UnityEngine.UI.Navigation
     - UnityEngine.UI.SpriteState
+    - UnityEngine.UI.Toggle/ToggleEvent
   methodsToPreserve:
   - assembly: Assembly-CSharp
     fullTypeName: Menu
+    methodName: setMusic
+  - assembly: Assembly-CSharp
+    fullTypeName: Menu
     methodName: StartGame
+  - assembly: Assembly-CSharp
+    fullTypeName: Menu
+    methodName: setVolume
   - assembly: Assembly-CSharp
     fullTypeName: Credits
     methodName: Quit
@@ -147,6 +155,8 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3076}
     - Class: 114
+      Script: {instanceID: 4952}
+    - Class: 114
       Script: {instanceID: 5358}
     - Class: 114
       Script: {instanceID: 5664}
@@ -161,6 +171,8 @@ ScriptsOnlyBuild:
     - Class: 157
       Script: {instanceID: 0}
     - Class: 196
+      Script: {instanceID: 0}
+    - Class: 213
       Script: {instanceID: 0}
     - Class: 222
       Script: {instanceID: 0}
@@ -594,7 +606,7 @@ ScriptsOnlyBuild:
     className: Mask
   - hash:
       serializedVersion: 2
-      Hash: 66056c2209ff8e6b238f8b056c7eb331
+      Hash: edcb704cb4f1cda60ed856c4072131f0
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: AudioManager

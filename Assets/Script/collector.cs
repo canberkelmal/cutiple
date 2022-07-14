@@ -22,6 +22,9 @@ public class collector : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.RightControl) || Input.GetKeyDown(KeyCode.R)){
              Scene scene = SceneManager.GetActiveScene(); SceneManager.LoadScene(scene.name);
         }
+        if(Input.GetKeyDown(KeyCode.Escape)){
+            SceneManager.LoadScene("Menu");
+        }
         gameManager.CollPos();
         /* mainCube.transform.position=new Vector3(transform.position.x, height+1, transform.position.z);
         this.transform.localPosition=new Vector3(0,-height,0); */
