@@ -28,6 +28,7 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.GraphicRaycaster
     - UnityEngine.UI.Image
     - UnityEngine.UI.Shadow
+    - UnityEngine.UI.Slider
     - UnityEngine.UI.Text
     - UnityEngine.UI.Toggle
   serializedClasses:
@@ -44,9 +45,13 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.FontData
     - UnityEngine.UI.MaskableGraphic/CullStateChangedEvent
     - UnityEngine.UI.Navigation
+    - UnityEngine.UI.Slider/SliderEvent
     - UnityEngine.UI.SpriteState
     - UnityEngine.UI.Toggle/ToggleEvent
   methodsToPreserve:
+  - assembly: Assembly-CSharp
+    fullTypeName: Menu
+    methodName: setHorizontalForce
   - assembly: Assembly-CSharp
     fullTypeName: Menu
     methodName: setMusic
@@ -56,6 +61,9 @@ ScriptsOnlyBuild:
   - assembly: Assembly-CSharp
     fullTypeName: Menu
     methodName: setVolume
+  - assembly: Assembly-CSharp
+    fullTypeName: Menu
+    methodName: setForwardForce
   - assembly: Assembly-CSharp
     fullTypeName: Credits
     methodName: Quit
@@ -88,27 +96,27 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1550}
+      Script: {instanceID: 1552}
     - Class: 114
-      Script: {instanceID: 1738}
+      Script: {instanceID: 1740}
     - Class: 114
-      Script: {instanceID: 1744}
+      Script: {instanceID: 1746}
     - Class: 114
-      Script: {instanceID: 2580}
+      Script: {instanceID: 2582}
     - Class: 114
-      Script: {instanceID: 2796}
+      Script: {instanceID: 2798}
     - Class: 114
-      Script: {instanceID: 3076}
+      Script: {instanceID: 3078}
     - Class: 114
-      Script: {instanceID: 5016}
+      Script: {instanceID: 5018}
     - Class: 114
-      Script: {instanceID: 5358}
+      Script: {instanceID: 5360}
     - Class: 114
-      Script: {instanceID: 5664}
+      Script: {instanceID: 5666}
     - Class: 114
-      Script: {instanceID: 5768}
+      Script: {instanceID: 5770}
     - Class: 114
-      Script: {instanceID: 6142}
+      Script: {instanceID: 6144}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -145,25 +153,27 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1550}
+      Script: {instanceID: 1552}
     - Class: 114
-      Script: {instanceID: 1744}
+      Script: {instanceID: 1746}
     - Class: 114
-      Script: {instanceID: 2580}
+      Script: {instanceID: 2582}
     - Class: 114
-      Script: {instanceID: 2796}
+      Script: {instanceID: 2798}
     - Class: 114
-      Script: {instanceID: 3076}
+      Script: {instanceID: 3078}
     - Class: 114
-      Script: {instanceID: 4952}
+      Script: {instanceID: 4954}
     - Class: 114
-      Script: {instanceID: 5358}
+      Script: {instanceID: 5008}
     - Class: 114
-      Script: {instanceID: 5664}
+      Script: {instanceID: 5360}
     - Class: 114
-      Script: {instanceID: 5810}
+      Script: {instanceID: 5666}
     - Class: 114
-      Script: {instanceID: 6142}
+      Script: {instanceID: 5812}
+    - Class: 114
+      Script: {instanceID: 6144}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -224,33 +234,33 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 2580}
+      Script: {instanceID: 2582}
     - Class: 114
-      Script: {instanceID: 2796}
+      Script: {instanceID: 2798}
     - Class: 114
-      Script: {instanceID: 3366}
+      Script: {instanceID: 3368}
     - Class: 114
-      Script: {instanceID: 3928}
+      Script: {instanceID: 3930}
     - Class: 114
-      Script: {instanceID: 4100}
+      Script: {instanceID: 4102}
     - Class: 114
-      Script: {instanceID: 5078}
+      Script: {instanceID: 5080}
     - Class: 114
-      Script: {instanceID: 5358}
+      Script: {instanceID: 5360}
     - Class: 114
-      Script: {instanceID: 5664}
+      Script: {instanceID: 5666}
     - Class: 114
-      Script: {instanceID: 5954}
+      Script: {instanceID: 5956}
     - Class: 114
-      Script: {instanceID: 6142}
+      Script: {instanceID: 6144}
     - Class: 114
-      Script: {instanceID: 6418}
+      Script: {instanceID: 6420}
     - Class: 114
-      Script: {instanceID: 6440}
+      Script: {instanceID: 6442}
     - Class: 114
-      Script: {instanceID: 7124}
+      Script: {instanceID: 7126}
     - Class: 114
-      Script: {instanceID: 7284}
+      Script: {instanceID: 7286}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -858,7 +868,7 @@ ScriptsOnlyBuild:
     className: SetHS
   - hash:
       serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+      Hash: cebe6d9f6b7d9c8962d245c228685ca9
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Menu

@@ -3045,8 +3045,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -11.123, y: -843.3751}
-  m_SizeDelta: {x: 805.75, y: 105.2565}
+  m_AnchoredPosition: {x: -2.875, y: -763}
+  m_SizeDelta: {x: 736.9, y: 105.2565}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &627911843
 MonoBehaviour:
@@ -3348,7 +3348,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1 &728347281 stripped
 GameObject:
@@ -4008,25 +4008,25 @@ MonoBehaviour:
   sounds:
   - name: collect
     clip: {fileID: 8300000, guid: a33d1162d16570245a921625351b8a5b, type: 3}
-    volume: 0.124
+    volume: 1
     pitch: 1
     loop: 0
     source: {fileID: 0}
   - name: Theme
     clip: {fileID: 8300000, guid: 7b11db727551d2249a43a56ba707d0be, type: 3}
-    volume: 0.105
+    volume: 1
     pitch: 1
     loop: 1
     source: {fileID: 0}
   - name: getCoin
     clip: {fileID: 8300000, guid: 6633a0dfb798282448ef53f1c4de8813, type: 3}
-    volume: 0.199
+    volume: 1
     pitch: 1
     loop: 0
     source: {fileID: 0}
   - name: lost
     clip: {fileID: 8300000, guid: bebfc56f754198c4d8e2ce63f92a9416, type: 3}
-    volume: 0.199
+    volume: 1
     pitch: 1
     loop: 0
     source: {fileID: 0}
@@ -4043,7 +4043,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &883396150
 GameObject:
@@ -5611,7 +5611,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TestMode: 0
   forwardV: 9
-  horizV: 5
+  horizV: 7
 --- !u!65 &1218730955
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6511,7 +6511,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}

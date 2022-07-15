@@ -15,6 +15,8 @@ public class PlaayerMovement : MonoBehaviour
     void Start()
     {
         Debug.Log("Hello World!");
+        forwardV=PlayerPrefs.GetFloat("forwardForce");
+        horizV=PlayerPrefs.GetFloat("horizontalForce");
         //rb.useGravity=true;
 
     }
@@ -22,16 +24,15 @@ public class PlaayerMovement : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
+        float horizontal=Input.GetAxis("Horizontal")*horizV*Time.deltaTime;
+        float vertical=Input.GetAxis("Vertical")*forwardV*Time.deltaTime;
         if(TestMode==true){
-            float horizontal=Input.GetAxis("Horizontal")*horizV*Time.deltaTime;
-            float vertical=Input.GetAxis("Vertical")*forwardV*Time.deltaTime;
-            this.transform.Translate(0, 0 ,  vertical);
+            this.transform.Translate(horizontal, 0 ,  vertical);
             if(this.transform.position.z<5 && this.transform.position.z>-5)
                 this.transform.Translate(horizontal, 0 , /* vertical */ 0 );
         }
         else if(TestMode==false){
-            float horizontal=Input.GetAxis("Horizontal")*horizV*Time.deltaTime;
-            this.transform.Translate(0, 0 , forwardV * Time.deltaTime);
+            this.transform.Translate(horizontal, 0 , forwardV * Time.deltaTime);
             if(this.transform.position.z<5 && this.transform.position.z>-5)
                 this.transform.Translate(horizontal,0 ,0 );
         }

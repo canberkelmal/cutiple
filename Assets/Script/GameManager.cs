@@ -18,6 +18,16 @@ public class GameManager : MonoBehaviour
         score.text = PlayerPrefs.GetInt("score", 0).ToString();
         posText.text = PlayerPrefs.GetFloat("pos", CollectorTrans.position.y).ToString();
         
+        
+        FindObjectOfType<AudioManager>().setVolume("Theme", PlayerPrefs.GetInt("music"));
+        if(PlayerPrefs.GetInt("volume")==1){
+            FindObjectOfType<AudioManager>().mute(false);
+        }
+        else{
+            FindObjectOfType<AudioManager>().mute(true);
+        }
+        
+        Debug.Log("gamemanager started");
     }
 
     public void scorePlus(){
