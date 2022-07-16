@@ -8,13 +8,15 @@ public class Menu : MonoBehaviour
 {
     public Text fwText;
     public Text HrText;
-    public Slider fwSlider;
-    public Slider HrSlider;
+    public Text mouseText;
+    public Text kbText;
+    public GameObject fwSlider;
+    public GameObject HrSlider;
     public Toggle master;
     public Toggle music;
     void Start(){
-        fwSlider.value = PlayerPrefs.GetFloat("forwardForce",9);
-        HrSlider.value = PlayerPrefs.GetFloat("horizontalForce",7);
+        fwSlider.GetComponent<Slider>().value = PlayerPrefs.GetFloat("forwardForce",9);
+        HrSlider.GetComponent<Slider>().value = PlayerPrefs.GetFloat("horizontalForce",7);
         fwText.text = "Forward Force: " + PlayerPrefs.GetFloat("forwardForce",9).ToString();
         HrText.text = "Horizontal Force: " + PlayerPrefs.GetFloat("horizontalForce",7).ToString();
 
@@ -33,7 +35,35 @@ public class Menu : MonoBehaviour
         else{
             music.isOn = false;
         }
+
+        if(PlayerPrefs.GetInt("remote",1)>0.5f){//keyboard
+            kbText.fontStyle = FontStyle.Bold;
+            mouseText.fontStyle = FontStyle.Normal;
+            HrSlider.gameObject.SetActive(true);
+        }
+        else{//mouse
+            kbText.fontStyle = FontStyle.Normal;
+            mouseText.fontStyle = FontStyle.Bold;
+            HrSlider.gameObject.SetActive(false);
+        }
     }
+    public void setRemote(float x){
+        if(x>0.5f){
+            PlayerPrefs.SetInt("remote",1);//keyboard
+            kbText.fontStyle = FontStyle.Bold;
+            mouseText.fontStyle = FontStyle.Normal;
+            HrSlider.gameObject.SetActive(true);
+        }
+        else{
+            PlayerPrefs.SetInt("remote",0);//mouse
+            kbText.fontStyle = FontStyle.Normal;
+            mouseText.fontStyle = FontStyle.Bold;
+            HrSlider.gameObject.SetActive(false);
+            }
+
+    }
+
+    
     public void StartGame(){
 
         Debug.Log("Start");

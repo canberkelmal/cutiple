@@ -16,14 +16,14 @@ public class setMovement : MonoBehaviour
             Vector3 desiredPosition = new Vector3(transform.position.x , transform.position.y , 20);
             Vector3 smoothedPosition = Vector3.Lerp(transform.position, desiredPosition, speed * Time.deltaTime);
             transform.position=smoothedPosition;
-            if(transform.position.z>3.99)
+            if(transform.position.z>2.99)
             direction=2;            
         }
         if(direction==2){            
             Vector3 desiredPosition2 = new Vector3(transform.position.x , transform.position.y , -20);
             Vector3 smoothedPosition2 = Vector3.Lerp(transform.position, desiredPosition2, speed* Time.deltaTime);
             transform.position=smoothedPosition2;
-            if(transform.position.z<-3.99)
+            if(transform.position.z<-2.99)
             direction=1;             
         }
     }

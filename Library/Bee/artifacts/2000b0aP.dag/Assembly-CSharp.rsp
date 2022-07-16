@@ -302,6 +302,7 @@
 "Assets/Script/GameManager.cs"
 "Assets/Script/getCoin.cs"
 "Assets/Script/Menu.cs"
+"Assets/Script/overCollider.cs"
 "Assets/Script/PlaayerMovement.cs"
 "Assets/Script/ScoreInc.cs"
 "Assets/Script/SetHS.cs"

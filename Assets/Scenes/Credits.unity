@@ -295,9 +295,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Thanks for
-
-    PLAYING!'
+  m_Text: Thanks for PLAYING!
 --- !u!222 &119018680
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -856,8 +854,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ae65760d9341d74683e8e58d496ec13, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HS: {fileID: 0}
-  NEW: {fileID: 0}
+  HS: {fileID: 1271189806}
+  NEW: {fileID: 1139151081}
+  title: {fileID: 119018679}
 --- !u!114 &715837689
 MonoBehaviour:
   m_ObjectHideFlags: 0

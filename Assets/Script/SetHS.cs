@@ -14,7 +14,7 @@ public class SetHS : MonoBehaviour
         NEW.SetActive(false);
         if(PlayerPrefs.GetInt("HighScore")<PlayerPrefs.GetInt("score")){
             PlayerPrefs.SetInt("HighScore", PlayerPrefs.GetInt("score"));
-        NEW.SetActive(true);
+            NEW.SetActive(true);
         }
         HS.text = PlayerPrefs.GetInt("HighScore").ToString();
 

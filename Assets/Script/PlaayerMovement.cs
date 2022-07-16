@@ -1,10 +1,17 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlaayerMovement : MonoBehaviour
 {
     public bool TestMode;
     public float forwardV;
     public float horizV;
+    public float sens;
+
+    private Vector2 turn;
+    float rotationX = 0f;
+    public float sensitivityX = 15F;
+    public Text posText;
 
 
     /*public Rigidbody rb;
@@ -22,20 +29,52 @@ public class PlaayerMovement : MonoBehaviour
     }
 
     // Update is called once per frame
-    void FixedUpdate()
+    void Update()
     {
+        
+        Vector3 mousePos = Input.mousePosition;
+        rotationX = Remap(mousePos.x, -sens, 828+sens, -3, 3);
         float horizontal=Input.GetAxis("Horizontal")*horizV*Time.deltaTime;
         float vertical=Input.GetAxis("Vertical")*forwardV*Time.deltaTime;
-        if(TestMode==true){
+
+        if(PlayerPrefs.GetInt("remote")==0){//MOUSE CONTROL
+            if(TestMode==true){
+                this.transform.Translate(0, 0 ,  vertical);
+                if(rotationX<3 && rotationX>-3)
+                    this.transform.Translate(horizontal, 0 , /* vertical */ 0 );
+            }
+            else if(TestMode==false){
+                this.transform.Translate(0, 0 , forwardV * Time.deltaTime);
+                if(rotationX<=3.1 && rotationX>=-3.1)
+                    transform.position=new Vector3(this.transform.position.x,this.transform.position.y, rotationX);
+            }
+            posText.text = mousePos.x.ToString() + " " + rotationX.ToString();
+        }
+
+        if(PlayerPrefs.GetInt("remote")==1){//KEYBOARD CONTROL
+            if(TestMode==true){
             this.transform.Translate(horizontal, 0 ,  vertical);
-            if(this.transform.position.z<5 && this.transform.position.z>-5)
+            if(this.transform.position.z<3 && this.transform.position.z>-3)
                 this.transform.Translate(horizontal, 0 , /* vertical */ 0 );
         }
         else if(TestMode==false){
             this.transform.Translate(horizontal, 0 , forwardV * Time.deltaTime);
-            if(this.transform.position.z<5 && this.transform.position.z>-5)
+            if(this.transform.position.z<3 && this.transform.position.z>-3)
                 this.transform.Translate(horizontal,0 ,0 );
         }
+        }
+
+        /*!!!!!!
+        if(TestMode==true){
+            this.transform.Translate(horizontal, 0 ,  vertical);
+            if(this.transform.position.z<3 && this.transform.position.z>-3)
+                this.transform.Translate(horizontal, 0 , /* vertical *//* 0 );
+        }
+        else if(TestMode==false){
+            this.transform.Translate(horizontal, 0 , forwardV * Time.deltaTime);
+            if(this.transform.position.z<3 && this.transform.position.z>-3)
+                this.transform.Translate(horizontal,0 ,0 );
+        } !!!!!!*/
 
         /*rb.AddForce(0,0,forwardForce*Time.deltaTime);
 
@@ -59,6 +98,12 @@ public class PlaayerMovement : MonoBehaviour
             rb.AddForce(0, force * Time.deltaTime, 0, ForceMode.VelocityChange);
         };*/
         
-
     }
+    public static float Remap (float value, float from1, float to1, float from2, float to2) {
+        return (value - from1) / (to1 - from1) * (to2 - from2) + from2;
+    }
+
+
+
+
 }

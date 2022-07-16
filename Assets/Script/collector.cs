@@ -22,7 +22,8 @@ public class collector : MonoBehaviour
     void Update()
     {   
         if(Input.GetKeyDown(KeyCode.RightControl) || Input.GetKeyDown(KeyCode.R)){
-             Scene scene = SceneManager.GetActiveScene(); SceneManager.LoadScene(scene.name);
+             Scene scene = SceneManager.GetActiveScene();
+             SceneManager.LoadScene(scene.name);
         }
         if(Input.GetKeyDown(KeyCode.Escape)){
             SceneManager.LoadScene("Menu");
@@ -43,6 +44,7 @@ public class collector : MonoBehaviour
         if (other.gameObject.tag=="END"){            
             Scene scene = SceneManager.GetActiveScene();
             SceneManager.LoadScene("Credits");
+            PlayerPrefs.GetInt("failed", 0);
             Debug.Log("hit to end");
         }
         if (other.gameObject.tag == "aaa" && other.gameObject.GetComponent<CollCube>().getCollEd()==false){
