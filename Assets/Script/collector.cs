@@ -7,8 +7,10 @@ using System;
 public class collector : MonoBehaviour
 {
     GameObject mainCube;
+    public GameObject pickupEffect;
     public GameManager gameManager;
     int height;
+    public Vector3 targetAngle = new Vector3(0f, 360f, 0f);
     void Start()
     {
         mainCube=GameObject.Find("MainBox");
@@ -50,6 +52,8 @@ public class collector : MonoBehaviour
             gameManager.CollPos();
             gameManager.multierPlus();
             FindObjectOfType<AudioManager>().Play("collect");
+            
+            Instantiate(pickupEffect,transform.position, rotation: Quaternion.Euler(targetAngle));
             mainCube.transform.position=new Vector3(transform.position.x, height+1, transform.position.z);
             this.transform.localPosition=new Vector3(0,-height,1);
             other.gameObject.GetComponent<CollCube>().doColl();

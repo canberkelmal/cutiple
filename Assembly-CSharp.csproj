@@ -36,20 +36,36 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
+     <Compile Include="Assets\Epic Toon FX\Scripts\ETFXPitchRandomizer.cs" />
+     <Compile Include="Assets\Epic Toon FX\Demo\Scripts\ETFXFireProjectile.cs" />
      <Compile Include="Assets\Script\ScoreInc.cs" />
+     <Compile Include="Assets\Epic Toon FX\Demo\Scripts\ETFXButtonScript.cs" />
+     <Compile Include="Assets\Epic Toon FX\Scripts\ETFXLightFade.cs" />
+     <Compile Include="Assets\Epic Toon FX\Demo\Scripts\VFX Library\ParticleEffectsLibrary.cs" />
+     <Compile Include="Assets\Epic Toon FX\Demo\Scripts\ETFXMouseOrbit.cs" />
+     <Compile Include="Assets\Epic Toon FX\Demo\Scripts\ETFXTarget.cs" />
+     <Compile Include="Assets\Epic Toon FX\Scripts\ETFXRotation.cs" />
      <Compile Include="Assets\Script\collector.cs" />
      <Compile Include="Assets\Script\AudioManager.cs" />
      <Compile Include="Assets\Script\GameManager.cs" />
+     <Compile Include="Assets\Epic Toon FX\Demo\Scripts\ETFXSceneManager.cs" />
+     <Compile Include="Assets\Epic Toon FX\Demo\Scripts\VFX Library\PEButtonScript.cs" />
+     <Compile Include="Assets\Epic Toon FX\Demo\Scripts\ETFXLoopScript.cs" />
      <Compile Include="Assets\Script\Credits.cs" />
      <Compile Include="Assets\Script\PlaayerMovement.cs" />
      <Compile Include="Assets\Script\SetHS.cs" />
      <Compile Include="Assets\Script\Menu.cs" />
+     <Compile Include="Assets\Epic Toon FX\Demo\Scripts\VFX Library\UICanvasManager.cs" />
      <Compile Include="Assets\Script\getCoin.cs" />
      <Compile Include="Assets\Script\Sound.cs" />
      <Compile Include="Assets\Script\setMovement.cs" />
      <Compile Include="Assets\Script\setTurning.cs" />
      <Compile Include="Assets\Script\CollCube.cs" />
      <Compile Include="Assets\Script\fallowPlayer.cs" />
+     <Compile Include="Assets\Epic Toon FX\Demo\Scripts\ETFXProjectileScript.cs" />
+     <None Include="Assets\Epic Toon FX\Prefabs\Environment\Environment FX.txt" />
+     <None Include="Assets\Epic Toon FX\Prefabs\Combat\Combat FX.txt" />
+     <None Include="Assets\Epic Toon FX\Prefabs\Interactive\Interactive FX.txt" />
     <Reference Include="UnityEngine">
         <HintPath>C:\Program Files\Unity\Hub\Editor\2021.3.1f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
     </Reference>
