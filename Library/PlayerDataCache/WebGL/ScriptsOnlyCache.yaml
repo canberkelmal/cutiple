@@ -89,34 +89,32 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
-    - Class: 89
-      Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1552}
+      Script: {instanceID: 1510}
     - Class: 114
-      Script: {instanceID: 1740}
+      Script: {instanceID: 1554}
     - Class: 114
-      Script: {instanceID: 1746}
+      Script: {instanceID: 1744}
     - Class: 114
-      Script: {instanceID: 2582}
+      Script: {instanceID: 1750}
     - Class: 114
-      Script: {instanceID: 2798}
+      Script: {instanceID: 2594}
     - Class: 114
-      Script: {instanceID: 3078}
+      Script: {instanceID: 2810}
     - Class: 114
-      Script: {instanceID: 5018}
+      Script: {instanceID: 3094}
     - Class: 114
-      Script: {instanceID: 5360}
+      Script: {instanceID: 5040}
     - Class: 114
-      Script: {instanceID: 5666}
+      Script: {instanceID: 5382}
     - Class: 114
-      Script: {instanceID: 5770}
+      Script: {instanceID: 5688}
     - Class: 114
-      Script: {instanceID: 6144}
+      Script: {instanceID: 5792}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -146,34 +144,32 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
-    - Class: 89
-      Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1552}
+      Script: {instanceID: 1510}
     - Class: 114
-      Script: {instanceID: 1746}
+      Script: {instanceID: 1554}
     - Class: 114
-      Script: {instanceID: 2582}
+      Script: {instanceID: 1750}
     - Class: 114
-      Script: {instanceID: 2798}
+      Script: {instanceID: 2594}
     - Class: 114
-      Script: {instanceID: 3078}
+      Script: {instanceID: 2810}
     - Class: 114
-      Script: {instanceID: 4954}
+      Script: {instanceID: 3094}
     - Class: 114
-      Script: {instanceID: 5008}
+      Script: {instanceID: 4976}
     - Class: 114
-      Script: {instanceID: 5360}
+      Script: {instanceID: 5030}
     - Class: 114
-      Script: {instanceID: 5666}
+      Script: {instanceID: 5382}
     - Class: 114
-      Script: {instanceID: 5812}
+      Script: {instanceID: 5688}
     - Class: 114
-      Script: {instanceID: 6144}
+      Script: {instanceID: 5834}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -234,33 +230,33 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 2582}
+      Script: {instanceID: 1510}
     - Class: 114
-      Script: {instanceID: 2798}
+      Script: {instanceID: 2594}
     - Class: 114
-      Script: {instanceID: 3368}
+      Script: {instanceID: 2810}
     - Class: 114
-      Script: {instanceID: 3930}
+      Script: {instanceID: 3384}
     - Class: 114
-      Script: {instanceID: 4102}
+      Script: {instanceID: 3946}
     - Class: 114
-      Script: {instanceID: 5080}
+      Script: {instanceID: 4118}
     - Class: 114
-      Script: {instanceID: 5360}
+      Script: {instanceID: 5102}
     - Class: 114
-      Script: {instanceID: 5666}
+      Script: {instanceID: 5382}
     - Class: 114
-      Script: {instanceID: 5956}
+      Script: {instanceID: 5688}
     - Class: 114
-      Script: {instanceID: 6144}
-    - Class: 114
-      Script: {instanceID: 6420}
+      Script: {instanceID: 5980}
     - Class: 114
       Script: {instanceID: 6442}
     - Class: 114
-      Script: {instanceID: 7126}
+      Script: {instanceID: 6464}
     - Class: 114
-      Script: {instanceID: 7286}
+      Script: {instanceID: 7148}
+    - Class: 114
+      Script: {instanceID: 7308}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -286,16 +282,34 @@ ScriptsOnlyBuild:
   scriptHashData:
   - hash:
       serializedVersion: 2
+      Hash: 748dd2a2a28da4e618912da5ac45684b
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.EventSystems
+    className: StandaloneInputModule
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UIElements
     className: PanelRaycaster
   - hash:
       serializedVersion: 2
+      Hash: 0e2dcecfc1a59863d6161482eaa244b3
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: EpicToonFX
+    className: ETFXPitchRandomizer
+  - hash:
+      serializedVersion: 2
       Hash: a6e561615949734e9f12f9b61661f43e
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: Image
+  - hash:
+      serializedVersion: 2
+      Hash: e888ef4305b8fac9cd5510fefa0636bf
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: EpicToonFX
+    className: ETFXFireProjectile
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -346,6 +360,18 @@ ScriptsOnlyBuild:
     className: UnityOnMouseExitMessageListener
   - hash:
       serializedVersion: 2
+      Hash: 8e5e00ca42eeebc1eae2f91fabb1ee02
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: EpicToonFX
+    className: ETFXButtonScript
+  - hash:
+      serializedVersion: 2
+      Hash: 2890c468cf196dca883ea02bde96343e
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: EpicToonFX
+    className: ETFXLightFade
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Unity.VisualScripting.Core.dll
     namespaceName: Unity.VisualScripting
@@ -388,10 +414,22 @@ ScriptsOnlyBuild:
     className: RawImage
   - hash:
       serializedVersion: 2
+      Hash: a4900d574c1d1a9001f0f83b0dddb24d
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ParticleEffectsLibrary
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Unity.VisualScripting.Core.dll
     namespaceName: Unity.VisualScripting
     className: UnityOnBecameVisibleMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: b5aaf686465544e9e949e46e293afee1
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: EpicToonFX
+    className: ETFXMouseOrbit
   - hash:
       serializedVersion: 2
       Hash: cc4274b586df3c02688bac01b88bd16c
@@ -490,6 +528,18 @@ ScriptsOnlyBuild:
     className: UnityOnDropdownValueChangedMessageListener
   - hash:
       serializedVersion: 2
+      Hash: 32cebb2ae4cddf0e4d07ddef22ca3a5c
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: EpicToonFX
+    className: ETFXTarget
+  - hash:
+      serializedVersion: 2
+      Hash: 79566861074b80c5467fa81dddcf4f5a
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: EpicToonFX
+    className: ETFXRotation
+  - hash:
+      serializedVersion: 2
       Hash: 0fd6822f6177297bd0eb4d83cc7a9030
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -550,7 +600,7 @@ ScriptsOnlyBuild:
     className: UnityOnSelectMessageListener
   - hash:
       serializedVersion: 2
-      Hash: 62e040979f1bcc5cfdb183bf34b809bf
+      Hash: d79c7f16d3aa302045c25791b14f2f85
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: collector
@@ -688,6 +738,12 @@ ScriptsOnlyBuild:
     className: DictionaryAsset
   - hash:
       serializedVersion: 2
+      Hash: 096a50f6a3d89528ac732e9bb63631c7
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ETFXSceneManager
+  - hash:
+      serializedVersion: 2
       Hash: 6980e81ddc615a861309d2d659cc3760
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
@@ -710,6 +766,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core.dll
     namespaceName: Unity.VisualScripting
     className: UnityOnPointerClickMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: 24b2edb739e02ab9678256f4cc52b87d
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PEButtonScript
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -740,6 +802,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core.dll
     namespaceName: Unity.VisualScripting
     className: UnityOnEndDragMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: 0912db8419735ecb16044b834208729d
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: EpicToonFX
+    className: ETFXLoopScript
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -880,6 +948,12 @@ ScriptsOnlyBuild:
     className: TextMeshProUGUI
   - hash:
       serializedVersion: 2
+      Hash: b41f6a02beff5d31b9210834dce1767e
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: UICanvasManager
+  - hash:
+      serializedVersion: 2
       Hash: baf498de9c072a859207e562ff661b5f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
@@ -890,12 +964,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core.dll
     namespaceName: Unity.VisualScripting
     className: UnityOnMouseUpAsButtonMessageListener
-  - hash:
-      serializedVersion: 2
-      Hash: 748dd2a2a28da4e618912da5ac45684b
-    assemblyName: UnityEngine.UI.dll
-    namespaceName: UnityEngine.EventSystems
-    className: StandaloneInputModule
   - hash:
       serializedVersion: 2
       Hash: f7858108331b563fb41b80b729297acd
@@ -1070,6 +1138,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: fallowPlayer
+  - hash:
+      serializedVersion: 2
+      Hash: 5058e62971372d10db24fe80294c7a3d
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ETFXProjectileScript
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
