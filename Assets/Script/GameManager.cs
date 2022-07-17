@@ -31,7 +31,6 @@ public class GameManager : MonoBehaviour
     }
 
     public void scorePlus(){
-        PlayerPrefs.SetInt("score", PlayerPrefs.GetInt("score", 0)+(PlayerPrefs.GetInt("multier", 1)));
         score.text = PlayerPrefs.GetInt("score", 0).ToString();
             
             StartCoroutine(scoreIn(score));

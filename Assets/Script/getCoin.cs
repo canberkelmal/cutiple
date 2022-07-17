@@ -9,7 +9,11 @@ public class getCoin : MonoBehaviour
     // Start is called before the first frame update
     void OnCollisionEnter (Collision other){
         if(other.gameObject.tag=="main" || other.gameObject.tag=="aaa"){
+            
+            PlayerPrefs.SetInt("score", PlayerPrefs.GetInt("score", 0)+(PlayerPrefs.GetInt("multier", 1)));
             pickCoin();
+            gameManager.scorePlus();
+
         }
 
 
@@ -22,8 +26,6 @@ public class getCoin : MonoBehaviour
         FindObjectOfType<AudioManager>().Play("getCoin");
 
         Instantiate(pickupEffect,transform.position,transform.rotation);
-
-        gameManager.scorePlus();
 
         Destroy(gameObject);
     }

@@ -6609,32 +6609,25 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameManager_scorePlus_m3BAFCD19186FBB6BF
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral8EA19EFE7C10200C9B57FC6A99C09467136FC897);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralC0E2DE04AE40B3B0493F0F846F34B279C6D44FE9);
 		s_Il2CppMethodInitialized = true;
 	}
 	int32_t V_0 = 0;
 	{
-		// PlayerPrefs.SetInt("score", PlayerPrefs.GetInt("score", 0)+(PlayerPrefs.GetInt("multier", 1)));
-		int32_t L_0;
-		L_0 = PlayerPrefs_GetInt_mDCAA431AEC7CBAA6AF58857A8773E5B6B472285C(_stringLiteralC0E2DE04AE40B3B0493F0F846F34B279C6D44FE9, 0, NULL);
-		int32_t L_1;
-		L_1 = PlayerPrefs_GetInt_mDCAA431AEC7CBAA6AF58857A8773E5B6B472285C(_stringLiteral8EA19EFE7C10200C9B57FC6A99C09467136FC897, 1, NULL);
-		PlayerPrefs_SetInt_mDC9617BFD56FEC670626A1002D9A5FE963D8D175(_stringLiteralC0E2DE04AE40B3B0493F0F846F34B279C6D44FE9, ((int32_t)il2cpp_codegen_add(L_0, L_1)), NULL);
 		// score.text = PlayerPrefs.GetInt("score", 0).ToString();
-		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_2 = __this->___score_5;
-		int32_t L_3;
-		L_3 = PlayerPrefs_GetInt_mDCAA431AEC7CBAA6AF58857A8773E5B6B472285C(_stringLiteralC0E2DE04AE40B3B0493F0F846F34B279C6D44FE9, 0, NULL);
-		V_0 = L_3;
-		String_t* L_4;
-		L_4 = Int32_ToString_m030E01C24E294D6762FB0B6F37CB541581F55CA5((&V_0), NULL);
-		VirtualActionInvoker1< String_t* >::Invoke(75 /* System.Void UnityEngine.UI.Text::set_text(System.String) */, L_2, L_4);
+		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_0 = __this->___score_5;
+		int32_t L_1;
+		L_1 = PlayerPrefs_GetInt_mDCAA431AEC7CBAA6AF58857A8773E5B6B472285C(_stringLiteralC0E2DE04AE40B3B0493F0F846F34B279C6D44FE9, 0, NULL);
+		V_0 = L_1;
+		String_t* L_2;
+		L_2 = Int32_ToString_m030E01C24E294D6762FB0B6F37CB541581F55CA5((&V_0), NULL);
+		VirtualActionInvoker1< String_t* >::Invoke(75 /* System.Void UnityEngine.UI.Text::set_text(System.String) */, L_0, L_2);
 		// StartCoroutine(scoreIn(score));
-		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_5 = __this->___score_5;
-		RuntimeObject* L_6;
-		L_6 = GameManager_scoreIn_mDEC3E7AEC4048C9540BCF462287B81FBF318D4E1(__this, L_5, NULL);
-		Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B* L_7;
-		L_7 = MonoBehaviour_StartCoroutine_m4CAFF732AA28CD3BDC5363B44A863575530EC812(__this, L_6, NULL);
+		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_3 = __this->___score_5;
+		RuntimeObject* L_4;
+		L_4 = GameManager_scoreIn_mDEC3E7AEC4048C9540BCF462287B81FBF318D4E1(__this, L_3, NULL);
+		Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B* L_5;
+		L_5 = MonoBehaviour_StartCoroutine_m4CAFF732AA28CD3BDC5363B44A863575530EC812(__this, L_4, NULL);
 		// }
 		return;
 	}
@@ -6986,6 +6979,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void getCoin_OnCollisionEnter_m7B49AD4C89B6DA
 	if (!s_Il2CppMethodInitialized)
 	{
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral4F2993C30C434C5F8BA708B372A8D4AC4A165185);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral8EA19EFE7C10200C9B57FC6A99C09467136FC897);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralC0E2DE04AE40B3B0493F0F846F34B279C6D44FE9);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralD034A94E67370F92465B64938096D26AAEB067EF);
 		s_Il2CppMethodInitialized = true;
 	}
@@ -7013,17 +7008,26 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void getCoin_OnCollisionEnter_m7B49AD4C89B6DA
 		L_7 = String_op_Equality_m0D685A924E5CD78078F248ED1726DA5A9D7D6AC0(L_6, _stringLiteralD034A94E67370F92465B64938096D26AAEB067EF, NULL);
 		if (!L_7)
 		{
-			goto IL_0034;
+			goto IL_0060;
 		}
 	}
 
 IL_002e:
 	{
+		// PlayerPrefs.SetInt("score", PlayerPrefs.GetInt("score", 0)+(PlayerPrefs.GetInt("multier", 1)));
+		int32_t L_8;
+		L_8 = PlayerPrefs_GetInt_mDCAA431AEC7CBAA6AF58857A8773E5B6B472285C(_stringLiteralC0E2DE04AE40B3B0493F0F846F34B279C6D44FE9, 0, NULL);
+		int32_t L_9;
+		L_9 = PlayerPrefs_GetInt_mDCAA431AEC7CBAA6AF58857A8773E5B6B472285C(_stringLiteral8EA19EFE7C10200C9B57FC6A99C09467136FC897, 1, NULL);
+		PlayerPrefs_SetInt_mDC9617BFD56FEC670626A1002D9A5FE963D8D175(_stringLiteralC0E2DE04AE40B3B0493F0F846F34B279C6D44FE9, ((int32_t)il2cpp_codegen_add(L_8, L_9)), NULL);
 		// pickCoin();
 		getCoin_pickCoin_m03884EC416127174D62DB998FD0D6DC0E9FA48D9(__this, NULL);
+		// gameManager.scorePlus();
+		GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6* L_10 = __this->___gameManager_5;
+		GameManager_scorePlus_m3BAFCD19186FBB6BFFC47E853615B4D70A89F7CF(L_10, NULL);
 	}
 
-IL_0034:
+IL_0060:
 	{
 		// }
 		return;
@@ -7064,13 +7068,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void getCoin_pickCoin_m03884EC416127174D62DB9
 		L_5 = Transform_get_rotation_m32AF40CA0D50C797DA639A696F8EAEC7524C179C(L_4, NULL);
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_6;
 		L_6 = Object_Instantiate_TisGameObject_t76FEDD663AB33C991A9C9A23129337651094216F_m2537AA64AEAC12995F52F5B412866556B83CFBE0(L_1, L_3, L_5, Object_Instantiate_TisGameObject_t76FEDD663AB33C991A9C9A23129337651094216F_m2537AA64AEAC12995F52F5B412866556B83CFBE0_RuntimeMethod_var);
-		// gameManager.scorePlus();
-		GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6* L_7 = __this->___gameManager_5;
-		GameManager_scorePlus_m3BAFCD19186FBB6BFFC47E853615B4D70A89F7CF(L_7, NULL);
 		// Destroy(gameObject);
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_8;
-		L_8 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(__this, NULL);
-		Object_Destroy_mFCDAE6333522488F60597AF019EA90BB1207A5AA(L_8, NULL);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_7;
+		L_7 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(__this, NULL);
+		Object_Destroy_mFCDAE6333522488F60597AF019EA90BB1207A5AA(L_7, NULL);
 		// }
 		return;
 	}
