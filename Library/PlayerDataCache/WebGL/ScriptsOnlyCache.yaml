@@ -760,7 +760,7 @@ ScriptsOnlyBuild:
     className: RectMask2D
   - hash:
       serializedVersion: 2
-      Hash: 7c940ad41633602577af2377dd389d7b
+      Hash: 33a5eb66e5d34c71a523ca508a5068ab
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: GameManager
@@ -916,7 +916,7 @@ ScriptsOnlyBuild:
     className: UnityOnCollisionEnter2DMessageListener
   - hash:
       serializedVersion: 2
-      Hash: e41cd1dae2be2bc1c28a9d12f3a448a1
+      Hash: 52eef468198b4271348be927b1a20153
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlaayerMovement

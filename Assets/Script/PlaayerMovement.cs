@@ -11,7 +11,7 @@ public class PlaayerMovement : MonoBehaviour
     private Vector2 turn;
     float rotationX = 0f;
     public float sensitivityX = 15F;
-    public Text posText;
+    //public Text posText;
 
 
     /*public Rigidbody rb;
@@ -33,7 +33,7 @@ public class PlaayerMovement : MonoBehaviour
     {
         
         Vector3 mousePos = Input.mousePosition;
-        rotationX = Remap(mousePos.x, -sens, 828+sens, -3, 3);
+        rotationX = Remap(mousePos.x, -sens+10, Screen.width+sens-10, -2.8f, 2.8f);
         float horizontal=Input.GetAxis("Horizontal")*horizV*Time.deltaTime;
         float vertical=Input.GetAxis("Vertical")*forwardV*Time.deltaTime;
 
@@ -48,17 +48,17 @@ public class PlaayerMovement : MonoBehaviour
                 if(rotationX<=3.1 && rotationX>=-3.1)
                     transform.position=new Vector3(this.transform.position.x,this.transform.position.y, rotationX);
             }
-            posText.text = mousePos.x.ToString() + " " + rotationX.ToString();
+            //posText.text = mousePos.x.ToString() + " " + rotationX.ToString();
         }
 
         if(PlayerPrefs.GetInt("remote")==1){//KEYBOARD CONTROL
             if(TestMode==true){
-            this.transform.Translate(horizontal, 0 ,  vertical);
+            this.transform.Translate(0, 0 ,  vertical);
             if(this.transform.position.z<3 && this.transform.position.z>-3)
                 this.transform.Translate(horizontal, 0 , /* vertical */ 0 );
         }
         else if(TestMode==false){
-            this.transform.Translate(horizontal, 0 , forwardV * Time.deltaTime);
+            this.transform.Translate(0, 0 , forwardV * Time.deltaTime);
             if(this.transform.position.z<3 && this.transform.position.z>-3)
                 this.transform.Translate(horizontal,0 ,0 );
         }

@@ -204,18 +204,18 @@ extern void GameManager_CollPos_m41BF9EC4D27DDFA34E6A2A3DADBE26284D3A0074 (void)
 extern void GameManager_scoreIn_mDEC3E7AEC4048C9540BCF462287B81FBF318D4E1 (void);
 // 0x00000060 System.Void GameManager::.ctor()
 extern void GameManager__ctor_mF453CED520617BFB65C52405A964E06CF17DB368 (void);
-// 0x00000061 System.Void GameManager/<scoreIn>d__11::.ctor(System.Int32)
-extern void U3CscoreInU3Ed__11__ctor_m5E7AE3FDD1990CB6A9E2EE75EBD5CEC997438CCE (void);
-// 0x00000062 System.Void GameManager/<scoreIn>d__11::System.IDisposable.Dispose()
-extern void U3CscoreInU3Ed__11_System_IDisposable_Dispose_m16ECACDCA7A56A777F3A4787A716EAA1A8DD3CCE (void);
-// 0x00000063 System.Boolean GameManager/<scoreIn>d__11::MoveNext()
-extern void U3CscoreInU3Ed__11_MoveNext_mF537D25F22208A51733EBDD720A72095CD389632 (void);
-// 0x00000064 System.Object GameManager/<scoreIn>d__11::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
-extern void U3CscoreInU3Ed__11_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m00B511EAF1E5E5C18B99D120C54A74D4782A5193 (void);
-// 0x00000065 System.Void GameManager/<scoreIn>d__11::System.Collections.IEnumerator.Reset()
-extern void U3CscoreInU3Ed__11_System_Collections_IEnumerator_Reset_m5E7D6725C5EFDCE0122345B94FC0478AFA9CDF4B (void);
-// 0x00000066 System.Object GameManager/<scoreIn>d__11::System.Collections.IEnumerator.get_Current()
-extern void U3CscoreInU3Ed__11_System_Collections_IEnumerator_get_Current_m53ABBB86C24EC0680061990140E56F353AD8EEC5 (void);
+// 0x00000061 System.Void GameManager/<scoreIn>d__10::.ctor(System.Int32)
+extern void U3CscoreInU3Ed__10__ctor_m5AA82BC6A9FDB6FBBF968AADE29EAE2B17D1511E (void);
+// 0x00000062 System.Void GameManager/<scoreIn>d__10::System.IDisposable.Dispose()
+extern void U3CscoreInU3Ed__10_System_IDisposable_Dispose_m77DF7829BA88650D404756E87E6AAAB315EFDC59 (void);
+// 0x00000063 System.Boolean GameManager/<scoreIn>d__10::MoveNext()
+extern void U3CscoreInU3Ed__10_MoveNext_m165A06C386C2DCF4ABDF9247E1B5B0DA2B13DFC1 (void);
+// 0x00000064 System.Object GameManager/<scoreIn>d__10::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+extern void U3CscoreInU3Ed__10_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m29383791F7B108ECB06120954EBE754A16502CAA (void);
+// 0x00000065 System.Void GameManager/<scoreIn>d__10::System.Collections.IEnumerator.Reset()
+extern void U3CscoreInU3Ed__10_System_Collections_IEnumerator_Reset_m22C6A36C1EF51D482407715FC26255A45FD0A4BD (void);
+// 0x00000066 System.Object GameManager/<scoreIn>d__10::System.Collections.IEnumerator.get_Current()
+extern void U3CscoreInU3Ed__10_System_Collections_IEnumerator_get_Current_mF730F45D5649A1395A43125011A14D666A8DB5C6 (void);
 // 0x00000067 System.Void getCoin::OnCollisionEnter(UnityEngine.Collision)
 extern void getCoin_OnCollisionEnter_m7B49AD4C89B6DA3B4C434B49181CDBBF4268A2D2 (void);
 // 0x00000068 System.Void getCoin::pickCoin()
@@ -482,12 +482,12 @@ static Il2CppMethodPointer s_methodPointers[186] =
 	GameManager_CollPos_m41BF9EC4D27DDFA34E6A2A3DADBE26284D3A0074,
 	GameManager_scoreIn_mDEC3E7AEC4048C9540BCF462287B81FBF318D4E1,
 	GameManager__ctor_mF453CED520617BFB65C52405A964E06CF17DB368,
-	U3CscoreInU3Ed__11__ctor_m5E7AE3FDD1990CB6A9E2EE75EBD5CEC997438CCE,
-	U3CscoreInU3Ed__11_System_IDisposable_Dispose_m16ECACDCA7A56A777F3A4787A716EAA1A8DD3CCE,
-	U3CscoreInU3Ed__11_MoveNext_mF537D25F22208A51733EBDD720A72095CD389632,
-	U3CscoreInU3Ed__11_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m00B511EAF1E5E5C18B99D120C54A74D4782A5193,
-	U3CscoreInU3Ed__11_System_Collections_IEnumerator_Reset_m5E7D6725C5EFDCE0122345B94FC0478AFA9CDF4B,
-	U3CscoreInU3Ed__11_System_Collections_IEnumerator_get_Current_m53ABBB86C24EC0680061990140E56F353AD8EEC5,
+	U3CscoreInU3Ed__10__ctor_m5AA82BC6A9FDB6FBBF968AADE29EAE2B17D1511E,
+	U3CscoreInU3Ed__10_System_IDisposable_Dispose_m77DF7829BA88650D404756E87E6AAAB315EFDC59,
+	U3CscoreInU3Ed__10_MoveNext_m165A06C386C2DCF4ABDF9247E1B5B0DA2B13DFC1,
+	U3CscoreInU3Ed__10_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m29383791F7B108ECB06120954EBE754A16502CAA,
+	U3CscoreInU3Ed__10_System_Collections_IEnumerator_Reset_m22C6A36C1EF51D482407715FC26255A45FD0A4BD,
+	U3CscoreInU3Ed__10_System_Collections_IEnumerator_get_Current_mF730F45D5649A1395A43125011A14D666A8DB5C6,
 	getCoin_OnCollisionEnter_m7B49AD4C89B6DA3B4C434B49181CDBBF4268A2D2,
 	getCoin_pickCoin_m03884EC416127174D62DB998FD0D6DC0E9FA48D9,
 	getCoin__ctor_m765C4834969E8F9AB3445CAF28CDD9768C859181,

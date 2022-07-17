@@ -13050,18 +13050,18 @@ struct LayoutCache_tF844B2FAD6933B78FD5EFEBDE0529BCBAC19BA60  : public RuntimeOb
 	GUILayoutGroup_tD08496E80F283C290B5B90D7BFB3C9C7CC33CD8D* ___windows_3;
 };
 
-// GameManager/<scoreIn>d__11
-struct U3CscoreInU3Ed__11_t483396098DE55B9F81E02B0A416685B030EE942E  : public RuntimeObject
+// GameManager/<scoreIn>d__10
+struct U3CscoreInU3Ed__10_t981FF8B6353355801D2BBF348E10D14E902E9124  : public RuntimeObject
 {
-	// System.Int32 GameManager/<scoreIn>d__11::<>1__state
+	// System.Int32 GameManager/<scoreIn>d__10::<>1__state
 	int32_t ___U3CU3E1__state_0;
-	// System.Object GameManager/<scoreIn>d__11::<>2__current
+	// System.Object GameManager/<scoreIn>d__10::<>2__current
 	RuntimeObject* ___U3CU3E2__current_1;
-	// UnityEngine.UI.Text GameManager/<scoreIn>d__11::a
+	// UnityEngine.UI.Text GameManager/<scoreIn>d__10::a
 	Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* ___a_2;
-	// GameManager GameManager/<scoreIn>d__11::<>4__this
+	// GameManager GameManager/<scoreIn>d__10::<>4__this
 	GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6* ___U3CU3E4__this_3;
-	// System.Int32 GameManager/<scoreIn>d__11::<i>5__2
+	// System.Int32 GameManager/<scoreIn>d__10::<i>5__2
 	int32_t ___U3CiU3E5__2_4;
 };
 
@@ -45726,14 +45726,12 @@ struct GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6  : public MonoBehav
 	Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* ___multier_4;
 	// UnityEngine.UI.Text GameManager::score
 	Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* ___score_5;
-	// UnityEngine.UI.Text GameManager::posText
-	Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* ___posText_6;
 	// UnityEngine.Transform GameManager::CollectorTrans
-	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___CollectorTrans_7;
+	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___CollectorTrans_6;
 	// System.Int32 GameManager::multierValue
-	int32_t ___multierValue_8;
+	int32_t ___multierValue_7;
 	// System.Single GameManager::animationDuration
-	float ___animationDuration_9;
+	float ___animationDuration_8;
 };
 
 // UnityEngine.UIElements.Label
@@ -45971,8 +45969,6 @@ struct PlaayerMovement_t3771366E125C6142F8CC2429CF2D34581CE6D825  : public MonoB
 	float ___rotationX_9;
 	// System.Single PlaayerMovement::sensitivityX
 	float ___sensitivityX_10;
-	// UnityEngine.UI.Text PlaayerMovement::posText
-	Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* ___posText_11;
 };
 
 // UnityEngine.UIElements.PopupWindow
@@ -54753,7 +54749,7 @@ const Il2CppTypeDefinitionSizes g_typeDefinitionSize3236 = { sizeof(Credits_tBBC
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize3237;
 const Il2CppTypeDefinitionSizes g_typeDefinitionSize3237 = { sizeof(fallowPlayer_t62D393B163E6F79B12E58BF2965314132C029248), -1, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize3238;
-const Il2CppTypeDefinitionSizes g_typeDefinitionSize3238 = { sizeof(U3CscoreInU3Ed__11_t483396098DE55B9F81E02B0A416685B030EE942E), -1, 0, 0 };
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize3238 = { sizeof(U3CscoreInU3Ed__10_t981FF8B6353355801D2BBF348E10D14E902E9124), -1, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize3239;
 const Il2CppTypeDefinitionSizes g_typeDefinitionSize3239 = { sizeof(GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6), -1, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize3240;
