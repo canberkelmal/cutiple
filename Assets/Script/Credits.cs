@@ -46,8 +46,6 @@ public class Credits : MonoBehaviour
     }
 
     public void resetHS(){
-        HS=GameObject.Find("HighScoree");
-        NEW=GameObject.Find("NEW");
         Debug.Log("Reset High Score!");
         PlayerPrefs.SetInt("HighScore",0);
         HS.GetComponent<UnityEngine.UI.Text>().text = PlayerPrefs.GetInt("HighScore", 0).ToString();

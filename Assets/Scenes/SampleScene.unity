@@ -5087,7 +5087,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 783034384}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -7614,7 +7614,7 @@ MonoBehaviour:
   TestMode: 0
   forwardV: 9
   horizV: 7
-  sens: 500
+  sens: 0
   sensitivityX: 15
   posText: {fileID: 627911843}
 --- !u!65 &1218730955

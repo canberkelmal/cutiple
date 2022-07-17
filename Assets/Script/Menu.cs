@@ -36,7 +36,7 @@ public class Menu : MonoBehaviour
             music.isOn = false;
         }
 
-        if(PlayerPrefs.GetInt("remote",1)>0.5f){//keyboard
+        if(PlayerPrefs.GetInt("remote",0)>0.5f){//keyboard
             kbText.fontStyle = FontStyle.Bold;
             mouseText.fontStyle = FontStyle.Normal;
             HrSlider.gameObject.SetActive(true);
