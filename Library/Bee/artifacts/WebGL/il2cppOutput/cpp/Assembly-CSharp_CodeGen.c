@@ -202,189 +202,203 @@ extern void GameManager_multierMinus_mE5BE53285C769A52A6C1A7EDE5075C74B77C3C2F (
 extern void GameManager_CollPos_m41BF9EC4D27DDFA34E6A2A3DADBE26284D3A0074 (void);
 // 0x0000005F System.Collections.IEnumerator GameManager::scoreIn(UnityEngine.UI.Text)
 extern void GameManager_scoreIn_mDEC3E7AEC4048C9540BCF462287B81FBF318D4E1 (void);
-// 0x00000060 System.Void GameManager::.ctor()
+// 0x00000060 System.Collections.IEnumerator GameManager::justScoreIn(UnityEngine.UI.Text)
+extern void GameManager_justScoreIn_m731D9BF9D50074B3759C899F21F346523A22F3C4 (void);
+// 0x00000061 System.Void GameManager::.ctor()
 extern void GameManager__ctor_mF453CED520617BFB65C52405A964E06CF17DB368 (void);
-// 0x00000061 System.Void GameManager/<scoreIn>d__10::.ctor(System.Int32)
+// 0x00000062 System.Void GameManager/<scoreIn>d__10::.ctor(System.Int32)
 extern void U3CscoreInU3Ed__10__ctor_m5AA82BC6A9FDB6FBBF968AADE29EAE2B17D1511E (void);
-// 0x00000062 System.Void GameManager/<scoreIn>d__10::System.IDisposable.Dispose()
+// 0x00000063 System.Void GameManager/<scoreIn>d__10::System.IDisposable.Dispose()
 extern void U3CscoreInU3Ed__10_System_IDisposable_Dispose_m77DF7829BA88650D404756E87E6AAAB315EFDC59 (void);
-// 0x00000063 System.Boolean GameManager/<scoreIn>d__10::MoveNext()
+// 0x00000064 System.Boolean GameManager/<scoreIn>d__10::MoveNext()
 extern void U3CscoreInU3Ed__10_MoveNext_m165A06C386C2DCF4ABDF9247E1B5B0DA2B13DFC1 (void);
-// 0x00000064 System.Object GameManager/<scoreIn>d__10::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+// 0x00000065 System.Object GameManager/<scoreIn>d__10::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
 extern void U3CscoreInU3Ed__10_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m29383791F7B108ECB06120954EBE754A16502CAA (void);
-// 0x00000065 System.Void GameManager/<scoreIn>d__10::System.Collections.IEnumerator.Reset()
+// 0x00000066 System.Void GameManager/<scoreIn>d__10::System.Collections.IEnumerator.Reset()
 extern void U3CscoreInU3Ed__10_System_Collections_IEnumerator_Reset_m22C6A36C1EF51D482407715FC26255A45FD0A4BD (void);
-// 0x00000066 System.Object GameManager/<scoreIn>d__10::System.Collections.IEnumerator.get_Current()
+// 0x00000067 System.Object GameManager/<scoreIn>d__10::System.Collections.IEnumerator.get_Current()
 extern void U3CscoreInU3Ed__10_System_Collections_IEnumerator_get_Current_mF730F45D5649A1395A43125011A14D666A8DB5C6 (void);
-// 0x00000067 System.Void getCoin::OnCollisionEnter(UnityEngine.Collision)
+// 0x00000068 System.Void GameManager/<justScoreIn>d__11::.ctor(System.Int32)
+extern void U3CjustScoreInU3Ed__11__ctor_m342E1B2C00B148869B9F64E14D822AFC722CBDEF (void);
+// 0x00000069 System.Void GameManager/<justScoreIn>d__11::System.IDisposable.Dispose()
+extern void U3CjustScoreInU3Ed__11_System_IDisposable_Dispose_m69F9A82406DB32B2ECC26F33D36200F31C3B6909 (void);
+// 0x0000006A System.Boolean GameManager/<justScoreIn>d__11::MoveNext()
+extern void U3CjustScoreInU3Ed__11_MoveNext_mEF73D737D3FE7323A6615E28A2ED76A5E4D579B9 (void);
+// 0x0000006B System.Object GameManager/<justScoreIn>d__11::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+extern void U3CjustScoreInU3Ed__11_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mFB95E77A3EC1E1AFF2765E2EB892F2B0DD6CFF0F (void);
+// 0x0000006C System.Void GameManager/<justScoreIn>d__11::System.Collections.IEnumerator.Reset()
+extern void U3CjustScoreInU3Ed__11_System_Collections_IEnumerator_Reset_mD4720C592A4D9161155EB202B85F1C366517F9A8 (void);
+// 0x0000006D System.Object GameManager/<justScoreIn>d__11::System.Collections.IEnumerator.get_Current()
+extern void U3CjustScoreInU3Ed__11_System_Collections_IEnumerator_get_Current_mEA920945EC76886E4377BBD45E5049F8F7679EDF (void);
+// 0x0000006E System.Void getCoin::OnCollisionEnter(UnityEngine.Collision)
 extern void getCoin_OnCollisionEnter_m7B49AD4C89B6DA3B4C434B49181CDBBF4268A2D2 (void);
-// 0x00000068 System.Void getCoin::pickCoin()
+// 0x0000006F System.Void getCoin::pickCoin()
 extern void getCoin_pickCoin_m03884EC416127174D62DB998FD0D6DC0E9FA48D9 (void);
-// 0x00000069 System.Void getCoin::.ctor()
+// 0x00000070 System.Void getCoin::.ctor()
 extern void getCoin__ctor_m765C4834969E8F9AB3445CAF28CDD9768C859181 (void);
-// 0x0000006A System.Void Menu::Start()
+// 0x00000071 System.Void Menu::Start()
 extern void Menu_Start_mC49986718939F87924A1391044721CAC6E28919D (void);
-// 0x0000006B System.Void Menu::setRemote(System.Single)
+// 0x00000072 System.Void Menu::setRemote(System.Single)
 extern void Menu_setRemote_m5CBBD359978169E1AC24F7C2407286F58E69F5E8 (void);
-// 0x0000006C System.Void Menu::StartGame()
+// 0x00000073 System.Void Menu::StartGame()
 extern void Menu_StartGame_m33557706120D85B9BA0ADDA44707411A175D4B74 (void);
-// 0x0000006D System.Void Menu::setVolume(System.Boolean)
+// 0x00000074 System.Void Menu::setVolume(System.Boolean)
 extern void Menu_setVolume_m5668D4D6ACA88DDBB19DF72F077BAADC83A75D57 (void);
-// 0x0000006E System.Void Menu::setMusic(System.Boolean)
+// 0x00000075 System.Void Menu::setMusic(System.Boolean)
 extern void Menu_setMusic_mE2AA0DFCC3A31D41E1F745882C30FD094B21D885 (void);
-// 0x0000006F System.Void Menu::setForwardForce(System.Single)
+// 0x00000076 System.Void Menu::setForwardForce(System.Single)
 extern void Menu_setForwardForce_m11A4A2B655DF3C64991B0552E9625CDF61B8FE8D (void);
-// 0x00000070 System.Void Menu::setHorizontalForce(System.Single)
+// 0x00000077 System.Void Menu::setHorizontalForce(System.Single)
 extern void Menu_setHorizontalForce_m6A0CF023C4518B09E0DCCF243981D2C1339054AB (void);
-// 0x00000071 System.Void Menu::.ctor()
+// 0x00000078 System.Void Menu::.ctor()
 extern void Menu__ctor_mBEF2B96BC9E3D64E020EBE40FEF9CF25E6C3ED00 (void);
-// 0x00000072 System.Void overCollider::OnCollisionEnter(UnityEngine.Collision)
+// 0x00000079 System.Void overCollider::OnCollisionEnter(UnityEngine.Collision)
 extern void overCollider_OnCollisionEnter_mDBF4071AE66F5D77C380862143C07D2798A52288 (void);
-// 0x00000073 System.Void overCollider::.ctor()
+// 0x0000007A System.Void overCollider::.ctor()
 extern void overCollider__ctor_mD0BD53E199534883C63CB29BAE9A5431BBE33F0C (void);
-// 0x00000074 System.Void PlaayerMovement::Start()
+// 0x0000007B System.Void PlaayerMovement::Start()
 extern void PlaayerMovement_Start_m8F5734D655C7B03D6F0086B02BBFB7CB2F6831EC (void);
-// 0x00000075 System.Void PlaayerMovement::Update()
+// 0x0000007C System.Void PlaayerMovement::Update()
 extern void PlaayerMovement_Update_m0A67830D03C55BA1CE2FD004827FA9DA5F689C52 (void);
-// 0x00000076 System.Single PlaayerMovement::Remap(System.Single,System.Single,System.Single,System.Single,System.Single)
+// 0x0000007D System.Single PlaayerMovement::Remap(System.Single,System.Single,System.Single,System.Single,System.Single)
 extern void PlaayerMovement_Remap_mE133D6143AD9C1A8E1FDFDD5455461B332F6DE48 (void);
-// 0x00000077 System.Void PlaayerMovement::.ctor()
+// 0x0000007E System.Void PlaayerMovement::.ctor()
 extern void PlaayerMovement__ctor_mE5151A7CB28A84B6D4EADB129D9942240E96188B (void);
-// 0x00000078 System.Void ScoreInc::Start()
+// 0x0000007F System.Void ScoreInc::Start()
 extern void ScoreInc_Start_m798015ABFEA5659022B364272A67790F7099DAD4 (void);
-// 0x00000079 System.Collections.IEnumerator ScoreInc::scoreCount()
+// 0x00000080 System.Collections.IEnumerator ScoreInc::scoreCount()
 extern void ScoreInc_scoreCount_mF3DF243F4A98227433311F7CAFBE4028623A15F8 (void);
-// 0x0000007A System.Collections.IEnumerator ScoreInc::scoreIn()
+// 0x00000081 System.Collections.IEnumerator ScoreInc::scoreIn()
 extern void ScoreInc_scoreIn_m8112CB0BD67F1C785925627E4BC795B7CACE53A9 (void);
-// 0x0000007B System.Void ScoreInc::.ctor()
+// 0x00000082 System.Void ScoreInc::.ctor()
 extern void ScoreInc__ctor_m8F2C8A96C9DDA47ADB8D42635B87ADA2DE265284 (void);
-// 0x0000007C System.Void ScoreInc/<scoreCount>d__2::.ctor(System.Int32)
+// 0x00000083 System.Void ScoreInc/<scoreCount>d__2::.ctor(System.Int32)
 extern void U3CscoreCountU3Ed__2__ctor_m8F82717C711847C4EC5271668DF29505B3C37E82 (void);
-// 0x0000007D System.Void ScoreInc/<scoreCount>d__2::System.IDisposable.Dispose()
+// 0x00000084 System.Void ScoreInc/<scoreCount>d__2::System.IDisposable.Dispose()
 extern void U3CscoreCountU3Ed__2_System_IDisposable_Dispose_m770D51E81CE44787F0E5E33B505391C96EB081BB (void);
-// 0x0000007E System.Boolean ScoreInc/<scoreCount>d__2::MoveNext()
+// 0x00000085 System.Boolean ScoreInc/<scoreCount>d__2::MoveNext()
 extern void U3CscoreCountU3Ed__2_MoveNext_m22CB2059CECA7273239B90A590948266DDA6FD0B (void);
-// 0x0000007F System.Object ScoreInc/<scoreCount>d__2::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+// 0x00000086 System.Object ScoreInc/<scoreCount>d__2::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
 extern void U3CscoreCountU3Ed__2_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m248365239F91DF4ADEACAB7E3F148AA997EF1577 (void);
-// 0x00000080 System.Void ScoreInc/<scoreCount>d__2::System.Collections.IEnumerator.Reset()
+// 0x00000087 System.Void ScoreInc/<scoreCount>d__2::System.Collections.IEnumerator.Reset()
 extern void U3CscoreCountU3Ed__2_System_Collections_IEnumerator_Reset_mB600112088364D5694C192DA096509FDB3A4C95B (void);
-// 0x00000081 System.Object ScoreInc/<scoreCount>d__2::System.Collections.IEnumerator.get_Current()
+// 0x00000088 System.Object ScoreInc/<scoreCount>d__2::System.Collections.IEnumerator.get_Current()
 extern void U3CscoreCountU3Ed__2_System_Collections_IEnumerator_get_Current_m87F92149DBF9EFE190F74F47804226F0D35717B5 (void);
-// 0x00000082 System.Void ScoreInc/<scoreIn>d__3::.ctor(System.Int32)
+// 0x00000089 System.Void ScoreInc/<scoreIn>d__3::.ctor(System.Int32)
 extern void U3CscoreInU3Ed__3__ctor_m973712BFF5AB1E0469B51E83AEF44987D3DD1476 (void);
-// 0x00000083 System.Void ScoreInc/<scoreIn>d__3::System.IDisposable.Dispose()
+// 0x0000008A System.Void ScoreInc/<scoreIn>d__3::System.IDisposable.Dispose()
 extern void U3CscoreInU3Ed__3_System_IDisposable_Dispose_m3AB9A67341FFEBA93BBBB54CC6105F05B8D54B01 (void);
-// 0x00000084 System.Boolean ScoreInc/<scoreIn>d__3::MoveNext()
+// 0x0000008B System.Boolean ScoreInc/<scoreIn>d__3::MoveNext()
 extern void U3CscoreInU3Ed__3_MoveNext_m24A0C52BBCD1901545091C96B756E997297E872A (void);
-// 0x00000085 System.Object ScoreInc/<scoreIn>d__3::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+// 0x0000008C System.Object ScoreInc/<scoreIn>d__3::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
 extern void U3CscoreInU3Ed__3_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m44BC445E9AD3B0D3EBBB2D7BE7681B67741AABFC (void);
-// 0x00000086 System.Void ScoreInc/<scoreIn>d__3::System.Collections.IEnumerator.Reset()
+// 0x0000008D System.Void ScoreInc/<scoreIn>d__3::System.Collections.IEnumerator.Reset()
 extern void U3CscoreInU3Ed__3_System_Collections_IEnumerator_Reset_m278B43FCCDF32C07EF90F525CFAAEF6C0D8F2356 (void);
-// 0x00000087 System.Object ScoreInc/<scoreIn>d__3::System.Collections.IEnumerator.get_Current()
+// 0x0000008E System.Object ScoreInc/<scoreIn>d__3::System.Collections.IEnumerator.get_Current()
 extern void U3CscoreInU3Ed__3_System_Collections_IEnumerator_get_Current_mCF3A47505585032674F3A229462117F92B44E936 (void);
-// 0x00000088 System.Void SetHS::Start()
+// 0x0000008F System.Void SetHS::Start()
 extern void SetHS_Start_m720B2ADE8611EDD5C350685E54FA273285A60F75 (void);
-// 0x00000089 System.Void SetHS::.ctor()
+// 0x00000090 System.Void SetHS::.ctor()
 extern void SetHS__ctor_mE819EEB2F05573A92FFDEC145A6210F258704425 (void);
-// 0x0000008A System.Void setMovement::FixedUpdate()
+// 0x00000091 System.Void setMovement::FixedUpdate()
 extern void setMovement_FixedUpdate_m87CE982DE24A3F634F016956757D668CCC58252B (void);
-// 0x0000008B System.Void setMovement::.ctor()
+// 0x00000092 System.Void setMovement::.ctor()
 extern void setMovement__ctor_mA9D38BFF339663D0BD9138E60CDE79B6D78C9801 (void);
-// 0x0000008C System.Void setTurning::FixedUpdate()
+// 0x00000093 System.Void setTurning::FixedUpdate()
 extern void setTurning_FixedUpdate_m2DCD0EE41A8B963D01FFEB898C9435656D8A5DA7 (void);
-// 0x0000008D System.Void setTurning::.ctor()
+// 0x00000094 System.Void setTurning::.ctor()
 extern void setTurning__ctor_m982D99FAC9E656F12022F3AFEB92C6E77CB4535C (void);
-// 0x0000008E System.Void Sound::.ctor()
+// 0x00000095 System.Void Sound::.ctor()
 extern void Sound__ctor_m5DD7C9F71B98D5670BBDD05F6D6FCDF43DC9EA8F (void);
-// 0x0000008F System.Void EpicToonFX.ETFXButtonScript::Start()
+// 0x00000096 System.Void EpicToonFX.ETFXButtonScript::Start()
 extern void ETFXButtonScript_Start_m0F7F0CFD5169405746F313FF1D7ED1534412844D (void);
-// 0x00000090 System.Void EpicToonFX.ETFXButtonScript::Update()
+// 0x00000097 System.Void EpicToonFX.ETFXButtonScript::Update()
 extern void ETFXButtonScript_Update_m81BD65853D34C93426A7D596C3DE2194AA0DDE65 (void);
-// 0x00000091 System.Void EpicToonFX.ETFXButtonScript::getProjectileNames()
+// 0x00000098 System.Void EpicToonFX.ETFXButtonScript::getProjectileNames()
 extern void ETFXButtonScript_getProjectileNames_mD169E11F6B6E57C5CBD06E7BCB3C4305CA23028B (void);
-// 0x00000092 System.Boolean EpicToonFX.ETFXButtonScript::overButton()
+// 0x00000099 System.Boolean EpicToonFX.ETFXButtonScript::overButton()
 extern void ETFXButtonScript_overButton_m91409E8AD5D3F2F253116858FFC90E972C7BA9B2 (void);
-// 0x00000093 System.Void EpicToonFX.ETFXButtonScript::.ctor()
+// 0x0000009A System.Void EpicToonFX.ETFXButtonScript::.ctor()
 extern void ETFXButtonScript__ctor_m517511C6802BD4A71C24EB8F22F6CDB5C429FECE (void);
-// 0x00000094 System.Void EpicToonFX.ETFXFireProjectile::Start()
+// 0x0000009B System.Void EpicToonFX.ETFXFireProjectile::Start()
 extern void ETFXFireProjectile_Start_m71FE79B72E21B59B68A10A40490B898D259A1E79 (void);
-// 0x00000095 System.Void EpicToonFX.ETFXFireProjectile::Update()
+// 0x0000009C System.Void EpicToonFX.ETFXFireProjectile::Update()
 extern void ETFXFireProjectile_Update_mA610052D76161FC9BE9184F05BC78C01D1D2664D (void);
-// 0x00000096 System.Void EpicToonFX.ETFXFireProjectile::nextEffect()
+// 0x0000009D System.Void EpicToonFX.ETFXFireProjectile::nextEffect()
 extern void ETFXFireProjectile_nextEffect_m6DB23389E6552F6A459F0CE526A4DCD1820687CE (void);
-// 0x00000097 System.Void EpicToonFX.ETFXFireProjectile::previousEffect()
+// 0x0000009E System.Void EpicToonFX.ETFXFireProjectile::previousEffect()
 extern void ETFXFireProjectile_previousEffect_mA36F8D920BA12504B6A9B7C70997F04E4DAD0492 (void);
-// 0x00000098 System.Void EpicToonFX.ETFXFireProjectile::AdjustSpeed(System.Single)
+// 0x0000009F System.Void EpicToonFX.ETFXFireProjectile::AdjustSpeed(System.Single)
 extern void ETFXFireProjectile_AdjustSpeed_m9A00824BF1347E0F8FE0E6126CF794676B7BB8FB (void);
-// 0x00000099 System.Void EpicToonFX.ETFXFireProjectile::.ctor()
+// 0x000000A0 System.Void EpicToonFX.ETFXFireProjectile::.ctor()
 extern void ETFXFireProjectile__ctor_m0454A1D37EA11E608273AB3987BD6D93213A31A8 (void);
-// 0x0000009A System.Void EpicToonFX.ETFXLoopScript::Start()
+// 0x000000A1 System.Void EpicToonFX.ETFXLoopScript::Start()
 extern void ETFXLoopScript_Start_m8B9F608C71269FF287FF5CF6A0D12F728446FE59 (void);
-// 0x0000009B System.Void EpicToonFX.ETFXLoopScript::PlayEffect()
+// 0x000000A2 System.Void EpicToonFX.ETFXLoopScript::PlayEffect()
 extern void ETFXLoopScript_PlayEffect_mB0F1246770022F592F854F71DA7E1A13C3949DCB (void);
-// 0x0000009C System.Collections.IEnumerator EpicToonFX.ETFXLoopScript::EffectLoop()
+// 0x000000A3 System.Collections.IEnumerator EpicToonFX.ETFXLoopScript::EffectLoop()
 extern void ETFXLoopScript_EffectLoop_m9BD0D9DFE864FB2692165E94270E5CFB64CBE5BE (void);
-// 0x0000009D System.Void EpicToonFX.ETFXLoopScript::.ctor()
+// 0x000000A4 System.Void EpicToonFX.ETFXLoopScript::.ctor()
 extern void ETFXLoopScript__ctor_m7D358DD45F488706D4E3340A8540A6AF526BB6B7 (void);
-// 0x0000009E System.Void EpicToonFX.ETFXLoopScript/<EffectLoop>d__6::.ctor(System.Int32)
+// 0x000000A5 System.Void EpicToonFX.ETFXLoopScript/<EffectLoop>d__6::.ctor(System.Int32)
 extern void U3CEffectLoopU3Ed__6__ctor_m241FF657591CE685C8CB3D30BB7388E021FFCC3C (void);
-// 0x0000009F System.Void EpicToonFX.ETFXLoopScript/<EffectLoop>d__6::System.IDisposable.Dispose()
+// 0x000000A6 System.Void EpicToonFX.ETFXLoopScript/<EffectLoop>d__6::System.IDisposable.Dispose()
 extern void U3CEffectLoopU3Ed__6_System_IDisposable_Dispose_mE9D671CFBC0674F6D6F1E16BCD8DB26A1FCB4B57 (void);
-// 0x000000A0 System.Boolean EpicToonFX.ETFXLoopScript/<EffectLoop>d__6::MoveNext()
+// 0x000000A7 System.Boolean EpicToonFX.ETFXLoopScript/<EffectLoop>d__6::MoveNext()
 extern void U3CEffectLoopU3Ed__6_MoveNext_m327965464B09214DB41A74AD12ACC109A74F1DDC (void);
-// 0x000000A1 System.Object EpicToonFX.ETFXLoopScript/<EffectLoop>d__6::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+// 0x000000A8 System.Object EpicToonFX.ETFXLoopScript/<EffectLoop>d__6::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
 extern void U3CEffectLoopU3Ed__6_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m4095FEA0B6FAFD62E68FBC39B482787B6889936B (void);
-// 0x000000A2 System.Void EpicToonFX.ETFXLoopScript/<EffectLoop>d__6::System.Collections.IEnumerator.Reset()
+// 0x000000A9 System.Void EpicToonFX.ETFXLoopScript/<EffectLoop>d__6::System.Collections.IEnumerator.Reset()
 extern void U3CEffectLoopU3Ed__6_System_Collections_IEnumerator_Reset_mE24C736927FD987ADF846421E107CC05D683376D (void);
-// 0x000000A3 System.Object EpicToonFX.ETFXLoopScript/<EffectLoop>d__6::System.Collections.IEnumerator.get_Current()
+// 0x000000AA System.Object EpicToonFX.ETFXLoopScript/<EffectLoop>d__6::System.Collections.IEnumerator.get_Current()
 extern void U3CEffectLoopU3Ed__6_System_Collections_IEnumerator_get_Current_m62DB043819328D994B722601E774742FB16DBE29 (void);
-// 0x000000A4 System.Void EpicToonFX.ETFXMouseOrbit::Start()
+// 0x000000AB System.Void EpicToonFX.ETFXMouseOrbit::Start()
 extern void ETFXMouseOrbit_Start_m883ED864D07ED2B013CBEC297E413AC4F7E8403A (void);
-// 0x000000A5 System.Void EpicToonFX.ETFXMouseOrbit::LateUpdate()
+// 0x000000AC System.Void EpicToonFX.ETFXMouseOrbit::LateUpdate()
 extern void ETFXMouseOrbit_LateUpdate_m88BAD2785B3447A239E1094CBEBEC160B1D5C270 (void);
-// 0x000000A6 System.Single EpicToonFX.ETFXMouseOrbit::ClampAngle(System.Single,System.Single,System.Single)
+// 0x000000AD System.Single EpicToonFX.ETFXMouseOrbit::ClampAngle(System.Single,System.Single,System.Single)
 extern void ETFXMouseOrbit_ClampAngle_m0465F9A5E01116400F3D22596C9EFB68F949297D (void);
-// 0x000000A7 System.Void EpicToonFX.ETFXMouseOrbit::.ctor()
+// 0x000000AE System.Void EpicToonFX.ETFXMouseOrbit::.ctor()
 extern void ETFXMouseOrbit__ctor_mCCECFB7E06C2B4F0D1F93D142B8CA91738C63370 (void);
-// 0x000000A8 System.Void EpicToonFX.ETFXTarget::Start()
+// 0x000000AF System.Void EpicToonFX.ETFXTarget::Start()
 extern void ETFXTarget_Start_m4453DDD66DCD94DE34E122A858EF37B3622FBDDE (void);
-// 0x000000A9 System.Void EpicToonFX.ETFXTarget::SpawnTarget()
+// 0x000000B0 System.Void EpicToonFX.ETFXTarget::SpawnTarget()
 extern void ETFXTarget_SpawnTarget_m6D2F813642C270F2D24D5C8E59FBB9DCEE4F2FA9 (void);
-// 0x000000AA System.Void EpicToonFX.ETFXTarget::OnTriggerEnter(UnityEngine.Collider)
+// 0x000000B1 System.Void EpicToonFX.ETFXTarget::OnTriggerEnter(UnityEngine.Collider)
 extern void ETFXTarget_OnTriggerEnter_m02835C9D449C3DF9EF0F1ED51651FBB8B81EC58A (void);
-// 0x000000AB System.Collections.IEnumerator EpicToonFX.ETFXTarget::Respawn()
+// 0x000000B2 System.Collections.IEnumerator EpicToonFX.ETFXTarget::Respawn()
 extern void ETFXTarget_Respawn_m1E5F54C8F846226F0BCF265F03D4BBAD53F20426 (void);
-// 0x000000AC System.Void EpicToonFX.ETFXTarget::.ctor()
+// 0x000000B3 System.Void EpicToonFX.ETFXTarget::.ctor()
 extern void ETFXTarget__ctor_m6D27B723D5EE302E348D7A5A7052A37FF09EFB33 (void);
-// 0x000000AD System.Void EpicToonFX.ETFXTarget/<Respawn>d__7::.ctor(System.Int32)
+// 0x000000B4 System.Void EpicToonFX.ETFXTarget/<Respawn>d__7::.ctor(System.Int32)
 extern void U3CRespawnU3Ed__7__ctor_m040E268CB255063C99CBBCC0B266BDCCF8F8D4A1 (void);
-// 0x000000AE System.Void EpicToonFX.ETFXTarget/<Respawn>d__7::System.IDisposable.Dispose()
+// 0x000000B5 System.Void EpicToonFX.ETFXTarget/<Respawn>d__7::System.IDisposable.Dispose()
 extern void U3CRespawnU3Ed__7_System_IDisposable_Dispose_m2A539129FAD324FCCFE7570356787FA4CE45616B (void);
-// 0x000000AF System.Boolean EpicToonFX.ETFXTarget/<Respawn>d__7::MoveNext()
+// 0x000000B6 System.Boolean EpicToonFX.ETFXTarget/<Respawn>d__7::MoveNext()
 extern void U3CRespawnU3Ed__7_MoveNext_m98CEBFB0B767AF44163EF68F42B2F00DA7C99D1A (void);
-// 0x000000B0 System.Object EpicToonFX.ETFXTarget/<Respawn>d__7::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+// 0x000000B7 System.Object EpicToonFX.ETFXTarget/<Respawn>d__7::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
 extern void U3CRespawnU3Ed__7_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m9E9C4DF0C87738322C436CFF672F3C0FDD320374 (void);
-// 0x000000B1 System.Void EpicToonFX.ETFXTarget/<Respawn>d__7::System.Collections.IEnumerator.Reset()
+// 0x000000B8 System.Void EpicToonFX.ETFXTarget/<Respawn>d__7::System.Collections.IEnumerator.Reset()
 extern void U3CRespawnU3Ed__7_System_Collections_IEnumerator_Reset_mD1EC0BDBAB12A918382764A21350B45F5C2AD617 (void);
-// 0x000000B2 System.Object EpicToonFX.ETFXTarget/<Respawn>d__7::System.Collections.IEnumerator.get_Current()
+// 0x000000B9 System.Object EpicToonFX.ETFXTarget/<Respawn>d__7::System.Collections.IEnumerator.get_Current()
 extern void U3CRespawnU3Ed__7_System_Collections_IEnumerator_get_Current_mFCD05AB83ED3E741E6D5D7F5F8B51CEA97F24FBF (void);
-// 0x000000B3 System.Void EpicToonFX.ETFXLightFade::Start()
+// 0x000000BA System.Void EpicToonFX.ETFXLightFade::Start()
 extern void ETFXLightFade_Start_m0D678058F25EBDBD14494760618ED99E7EED9A60 (void);
-// 0x000000B4 System.Void EpicToonFX.ETFXLightFade::Update()
+// 0x000000BB System.Void EpicToonFX.ETFXLightFade::Update()
 extern void ETFXLightFade_Update_mE8F13E85F7C1AD93E0B9D2CE9737638E9BD340AF (void);
-// 0x000000B5 System.Void EpicToonFX.ETFXLightFade::.ctor()
+// 0x000000BC System.Void EpicToonFX.ETFXLightFade::.ctor()
 extern void ETFXLightFade__ctor_m1ED5D845611A6F5D0DEE7066BD50B26BCD197107 (void);
-// 0x000000B6 System.Void EpicToonFX.ETFXPitchRandomizer::Start()
+// 0x000000BD System.Void EpicToonFX.ETFXPitchRandomizer::Start()
 extern void ETFXPitchRandomizer_Start_m59C6A78C8AEBFB7E0C1475BC3AC48D3EE0E96832 (void);
-// 0x000000B7 System.Void EpicToonFX.ETFXPitchRandomizer::.ctor()
+// 0x000000BE System.Void EpicToonFX.ETFXPitchRandomizer::.ctor()
 extern void ETFXPitchRandomizer__ctor_m5A7D44A2501727B8D8CFA36DF1DAAD0652A78BD2 (void);
-// 0x000000B8 System.Void EpicToonFX.ETFXRotation::Start()
+// 0x000000BF System.Void EpicToonFX.ETFXRotation::Start()
 extern void ETFXRotation_Start_mE170B11ECA9897944DF1D88D87CE6C393707E7D5 (void);
-// 0x000000B9 System.Void EpicToonFX.ETFXRotation::Update()
+// 0x000000C0 System.Void EpicToonFX.ETFXRotation::Update()
 extern void ETFXRotation_Update_mFEF375BFB4CEA01E6D71EF0CC11ADD6014784F6A (void);
-// 0x000000BA System.Void EpicToonFX.ETFXRotation::.ctor()
+// 0x000000C1 System.Void EpicToonFX.ETFXRotation::.ctor()
 extern void ETFXRotation__ctor_m819E8377B916CB68CEA35D318A4B1EFED3B1D007 (void);
-static Il2CppMethodPointer s_methodPointers[186] = 
+static Il2CppMethodPointer s_methodPointers[193] = 
 {
 	ETFXProjectileScript_Start_m0E1FB70AED6DE06208444A4B1EE0095D4495A5C0,
 	ETFXProjectileScript_FixedUpdate_m2FB7E63B404F5C701112656F5A4913E022A1553A,
@@ -481,6 +495,7 @@ static Il2CppMethodPointer s_methodPointers[186] =
 	GameManager_multierMinus_mE5BE53285C769A52A6C1A7EDE5075C74B77C3C2F,
 	GameManager_CollPos_m41BF9EC4D27DDFA34E6A2A3DADBE26284D3A0074,
 	GameManager_scoreIn_mDEC3E7AEC4048C9540BCF462287B81FBF318D4E1,
+	GameManager_justScoreIn_m731D9BF9D50074B3759C899F21F346523A22F3C4,
 	GameManager__ctor_mF453CED520617BFB65C52405A964E06CF17DB368,
 	U3CscoreInU3Ed__10__ctor_m5AA82BC6A9FDB6FBBF968AADE29EAE2B17D1511E,
 	U3CscoreInU3Ed__10_System_IDisposable_Dispose_m77DF7829BA88650D404756E87E6AAAB315EFDC59,
@@ -488,6 +503,12 @@ static Il2CppMethodPointer s_methodPointers[186] =
 	U3CscoreInU3Ed__10_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m29383791F7B108ECB06120954EBE754A16502CAA,
 	U3CscoreInU3Ed__10_System_Collections_IEnumerator_Reset_m22C6A36C1EF51D482407715FC26255A45FD0A4BD,
 	U3CscoreInU3Ed__10_System_Collections_IEnumerator_get_Current_mF730F45D5649A1395A43125011A14D666A8DB5C6,
+	U3CjustScoreInU3Ed__11__ctor_m342E1B2C00B148869B9F64E14D822AFC722CBDEF,
+	U3CjustScoreInU3Ed__11_System_IDisposable_Dispose_m69F9A82406DB32B2ECC26F33D36200F31C3B6909,
+	U3CjustScoreInU3Ed__11_MoveNext_mEF73D737D3FE7323A6615E28A2ED76A5E4D579B9,
+	U3CjustScoreInU3Ed__11_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mFB95E77A3EC1E1AFF2765E2EB892F2B0DD6CFF0F,
+	U3CjustScoreInU3Ed__11_System_Collections_IEnumerator_Reset_mD4720C592A4D9161155EB202B85F1C366517F9A8,
+	U3CjustScoreInU3Ed__11_System_Collections_IEnumerator_get_Current_mEA920945EC76886E4377BBD45E5049F8F7679EDF,
 	getCoin_OnCollisionEnter_m7B49AD4C89B6DA3B4C434B49181CDBBF4268A2D2,
 	getCoin_pickCoin_m03884EC416127174D62DB998FD0D6DC0E9FA48D9,
 	getCoin__ctor_m765C4834969E8F9AB3445CAF28CDD9768C859181,
@@ -573,7 +594,7 @@ static Il2CppMethodPointer s_methodPointers[186] =
 	ETFXRotation_Update_mFEF375BFB4CEA01E6D71EF0CC11ADD6014784F6A,
 	ETFXRotation__ctor_m819E8377B916CB68CEA35D318A4B1EFED3B1D007,
 };
-static const int32_t s_InvokerIndices[186] = 
+static const int32_t s_InvokerIndices[193] = 
 {
 	3423,
 	3423,
@@ -670,7 +691,14 @@ static const int32_t s_InvokerIndices[186] =
 	3423,
 	3423,
 	2455,
+	2455,
 	3423,
+	2770,
+	3423,
+	3271,
+	3331,
+	3423,
+	3331,
 	2770,
 	3423,
 	3271,
@@ -766,7 +794,7 @@ IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	186,
+	193,
 	s_methodPointers,
 	0,
 	NULL,

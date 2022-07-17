@@ -33,7 +33,7 @@ public class GameManager : MonoBehaviour
     public void scorePlus(){
         score.text = PlayerPrefs.GetInt("score", 0).ToString();
             
-            StartCoroutine(scoreIn(score));
+            StartCoroutine(justScoreIn(score));
     }
 
     public void multierPlus(){
@@ -64,6 +64,22 @@ public class GameManager : MonoBehaviour
     }
 
     IEnumerator scoreIn(Text a){
+        for(int i=0; i<8;i++){
+        a.fontSize=a.fontSize+3;
+        yield return new WaitForSeconds(animationDuration);
+        if(a.fontSize>96){
+            a.fontSize=96;
+            break;
+        }
+        }
+        
+        while(a.fontSize>40){
+        a.fontSize=a.fontSize-3;
+        yield return new WaitForSeconds(animationDuration);
+        }
+        a.fontSize=40;
+    }
+    IEnumerator justScoreIn(Text a){
         for(int i=0; i<8;i++){
         a.fontSize=a.fontSize+3;
         yield return new WaitForSeconds(animationDuration);
