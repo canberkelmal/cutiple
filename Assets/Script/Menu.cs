@@ -14,6 +14,7 @@ public class Menu : MonoBehaviour
     public GameObject HrSlider;
     public Toggle master;
     public Toggle music;
+    public Scrollbar remoteScroll;
     void Start(){
         fwSlider.GetComponent<Slider>().value = PlayerPrefs.GetFloat("forwardForce",9);
         HrSlider.GetComponent<Slider>().value = PlayerPrefs.GetFloat("horizontalForce",7);
@@ -40,13 +41,26 @@ public class Menu : MonoBehaviour
             kbText.fontStyle = FontStyle.Bold;
             mouseText.fontStyle = FontStyle.Normal;
             HrSlider.gameObject.SetActive(true);
+            remoteScroll.value=1;
         }
         else{//mouse
             kbText.fontStyle = FontStyle.Normal;
             mouseText.fontStyle = FontStyle.Bold;
             HrSlider.gameObject.SetActive(false);
+            remoteScroll.value=0;
         }
     }
+
+    public void onClicked(){
+        if(PlayerPrefs.GetInt("remote",0)>0.5f){//to mouse
+            setRemote(0.01f);
+        }
+        else{//to kb
+            setRemote(0.99f);
+        }
+        Start();
+    }
+
     public void setRemote(float x){
         if(x>0.5f){
             PlayerPrefs.SetInt("remote",1);//keyboard

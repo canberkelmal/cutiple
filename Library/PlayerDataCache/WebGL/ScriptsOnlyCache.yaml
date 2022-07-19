@@ -28,6 +28,7 @@ ScriptsOnlyBuild:
     - UnityEditor.TestTools.TestRunner.TestRun.TestJobDataHolder
     UnityEngine.UI.dll:
     - UnityEngine.EventSystems.EventSystem
+    - UnityEngine.EventSystems.EventTrigger
     - UnityEngine.EventSystems.StandaloneInputModule
     - UnityEngine.UI.Button
     - UnityEngine.UI.CanvasScaler
@@ -65,6 +66,8 @@ ScriptsOnlyBuild:
     - UnityEngine.TextCore.GlyphMetrics
     - UnityEngine.TextCore.GlyphRect
     UnityEngine.UI:
+    - UnityEngine.EventSystems.EventTrigger/Entry
+    - UnityEngine.EventSystems.EventTrigger/TriggerEvent
     - UnityEngine.UI.AnimationTriggers
     - UnityEngine.UI.Button/ButtonClickedEvent
     - UnityEngine.UI.ColorBlock
@@ -88,6 +91,9 @@ ScriptsOnlyBuild:
   - assembly: Assembly-CSharp
     fullTypeName: Menu
     methodName: setRemote
+  - assembly: Assembly-CSharp
+    fullTypeName: Menu
+    methodName: onClicked
   - assembly: Assembly-CSharp
     fullTypeName: Menu
     methodName: setVolume
@@ -128,25 +134,25 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1536}
     - Class: 114
-      Script: {instanceID: 1584}
+      Script: {instanceID: 1580}
     - Class: 114
-      Script: {instanceID: 1774}
+      Script: {instanceID: 1770}
     - Class: 114
-      Script: {instanceID: 1780}
+      Script: {instanceID: 1776}
     - Class: 114
-      Script: {instanceID: 2624}
+      Script: {instanceID: 2620}
     - Class: 114
-      Script: {instanceID: 2840}
+      Script: {instanceID: 2836}
     - Class: 114
-      Script: {instanceID: 3124}
+      Script: {instanceID: 3120}
     - Class: 114
-      Script: {instanceID: 5072}
+      Script: {instanceID: 5068}
     - Class: 114
-      Script: {instanceID: 5414}
+      Script: {instanceID: 5410}
     - Class: 114
-      Script: {instanceID: 5720}
+      Script: {instanceID: 5716}
     - Class: 114
-      Script: {instanceID: 5824}
+      Script: {instanceID: 5820}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -178,6 +184,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
+    - Class: 89
+      Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
     - Class: 108
@@ -185,35 +193,37 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1536}
     - Class: 114
-      Script: {instanceID: 1584}
+      Script: {instanceID: 1580}
     - Class: 114
-      Script: {instanceID: 1780}
+      Script: {instanceID: 1776}
     - Class: 114
-      Script: {instanceID: 2190}
+      Script: {instanceID: 2186}
     - Class: 114
-      Script: {instanceID: 2624}
+      Script: {instanceID: 2620}
     - Class: 114
-      Script: {instanceID: 2840}
+      Script: {instanceID: 2836}
     - Class: 114
-      Script: {instanceID: 3124}
+      Script: {instanceID: 3120}
     - Class: 114
-      Script: {instanceID: 4162}
+      Script: {instanceID: 4158}
     - Class: 114
-      Script: {instanceID: 4424}
+      Script: {instanceID: 4420}
     - Class: 114
-      Script: {instanceID: 5008}
+      Script: {instanceID: 5004}
     - Class: 114
-      Script: {instanceID: 5062}
+      Script: {instanceID: 5058}
     - Class: 114
-      Script: {instanceID: 5148}
+      Script: {instanceID: 5144}
     - Class: 114
-      Script: {instanceID: 5414}
+      Script: {instanceID: 5410}
     - Class: 114
-      Script: {instanceID: 5720}
+      Script: {instanceID: 5716}
     - Class: 114
-      Script: {instanceID: 5866}
+      Script: {instanceID: 5862}
     - Class: 114
-      Script: {instanceID: 6208}
+      Script: {instanceID: 6204}
+    - Class: 114
+      Script: {instanceID: 6930}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -263,6 +273,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 83
       Script: {instanceID: 0}
+    - Class: 89
+      Script: {instanceID: 0}
     - Class: 91
       Script: {instanceID: 0}
     - Class: 95
@@ -274,33 +286,33 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1536}
     - Class: 114
-      Script: {instanceID: 2624}
+      Script: {instanceID: 2620}
     - Class: 114
-      Script: {instanceID: 2840}
+      Script: {instanceID: 2836}
     - Class: 114
-      Script: {instanceID: 3414}
+      Script: {instanceID: 3410}
     - Class: 114
-      Script: {instanceID: 3976}
+      Script: {instanceID: 3972}
     - Class: 114
-      Script: {instanceID: 4148}
+      Script: {instanceID: 4144}
     - Class: 114
-      Script: {instanceID: 4832}
+      Script: {instanceID: 4828}
     - Class: 114
-      Script: {instanceID: 5134}
+      Script: {instanceID: 5130}
     - Class: 114
-      Script: {instanceID: 5414}
+      Script: {instanceID: 5410}
     - Class: 114
-      Script: {instanceID: 5720}
+      Script: {instanceID: 5716}
     - Class: 114
-      Script: {instanceID: 6012}
+      Script: {instanceID: 6008}
     - Class: 114
-      Script: {instanceID: 6474}
+      Script: {instanceID: 6470}
     - Class: 114
-      Script: {instanceID: 6496}
+      Script: {instanceID: 6492}
     - Class: 114
-      Script: {instanceID: 7180}
+      Script: {instanceID: 7176}
     - Class: 114
-      Script: {instanceID: 7340}
+      Script: {instanceID: 7336}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -380,7 +392,7 @@ ScriptsOnlyBuild:
     className: Selectable
   - hash:
       serializedVersion: 2
-      Hash: e17871b109a1e54557708aaa5de81990
+      Hash: 094f75a38aad936fc101e24c1b657cb5
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: ScoreInc
@@ -986,7 +998,7 @@ ScriptsOnlyBuild:
     className: SetHS
   - hash:
       serializedVersion: 2
-      Hash: 312853111ceea689d44c5df58c5e0bb8
+      Hash: b12c9b0b91c5c10ef4688ee068423724
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Menu
