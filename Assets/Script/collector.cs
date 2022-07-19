@@ -56,12 +56,12 @@ public class collector : MonoBehaviour
             FindObjectOfType<AudioManager>().Play("collect");
             
             Instantiate(pickupEffect,transform.position, rotation: Quaternion.Euler(targetAngle));
-            mainCube.transform.position=new Vector3(transform.position.x, height+1, transform.position.z);
+            mainCube.transform.position=new Vector3(mainCube.transform.position.x, height+1, mainCube.transform.position.z);
+            other.gameObject.transform.parent=mainCube.transform;
+            other.transform.localPosition=new Vector3(0,other.transform.localPosition.y,0);
             this.transform.localPosition=new Vector3(0,-height,1);
             other.gameObject.GetComponent<CollCube>().doColl();
             //other.gameObject.GetComponent<CollCube>().setIndex(height);
-            other.gameObject.transform.parent=mainCube.transform;
-            other.transform.localPosition=new Vector3(0,other.transform.localPosition.y,0);
             //ÖNEMLİother.transform.localPosition=new Vector3(0,other.transform.position.y,0);
             //other.gameObject.GetComponent<BoxCollider>().isTrigger=false;
             /* if(height==1)
