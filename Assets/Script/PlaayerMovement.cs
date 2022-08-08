@@ -22,8 +22,8 @@ public class PlaayerMovement : MonoBehaviour
     void Start()
     {
         Debug.Log("Hello World!");
-        forwardV=PlayerPrefs.GetFloat("forwardForce");
-        horizV=PlayerPrefs.GetFloat("horizontalForce");
+        forwardV=PlayerPrefs.GetFloat("forwardForce",9);
+        horizV=PlayerPrefs.GetFloat("horizontalForce",7);
         //rb.useGravity=true;
 
     }

@@ -31,7 +31,7 @@ public class CollCube : MonoBehaviour
         if(transform.position.y<0.9 && transform.parent==null){            
             GetComponent<Rigidbody>().useGravity=false;
             GetComponent<Rigidbody>().isKinematic=true;
-        }
+        } 
     }
 
     void OnCollisionEnter (Collision other){
@@ -46,7 +46,6 @@ public class CollCube : MonoBehaviour
             GetComponent<Rigidbody>().isKinematic=true;
             gameManager.CollPos();
             gameManager.multierMinus();
-
         }
     }
     public bool getCollEd(){

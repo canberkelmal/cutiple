@@ -14,7 +14,7 @@ public class GameManager : MonoBehaviour
     public void Start(){
         PlayerPrefs.SetInt("multier", 1);
         PlayerPrefs.SetInt("score", 0);
-        multier.text = PlayerPrefs.GetInt("multier", 1).ToString();
+        multier.text = "X " + PlayerPrefs.GetInt("multier", 1).ToString();
         score.text = PlayerPrefs.GetInt("score", 0).ToString();
         //posText.text = PlayerPrefs.GetFloat("pos", CollectorTrans.position.y).ToString();
         

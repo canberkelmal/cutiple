@@ -16,10 +16,10 @@ public class Menu : MonoBehaviour
     public Toggle music;
     public Scrollbar remoteScroll;
     void Start(){
-        fwSlider.GetComponent<Slider>().value = PlayerPrefs.GetFloat("forwardForce",9);
-        HrSlider.GetComponent<Slider>().value = PlayerPrefs.GetFloat("horizontalForce",7);
-        fwText.text = "Forward Force: " + PlayerPrefs.GetFloat("forwardForce",9).ToString();
-        HrText.text = "Horizontal Force: " + PlayerPrefs.GetFloat("horizontalForce",7).ToString();
+        fwSlider.GetComponent<Slider>().value = PlayerPrefs.GetFloat("forwardForce",9f);
+        HrSlider.GetComponent<Slider>().value = PlayerPrefs.GetFloat("horizontalForce",7f);
+        fwText.text = "Forward Force: " + PlayerPrefs.GetFloat("forwardForce",9f).ToString();
+        HrText.text = "Horizontal Force: " + PlayerPrefs.GetFloat("horizontalForce",7f).ToString();
 
         if(PlayerPrefs.GetInt("volume")==1){
             master.isOn = true;
