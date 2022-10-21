@@ -55,13 +55,6 @@ public class GameManager : MonoBehaviour
 
             StartCoroutine(scoreIn(multier));
     }
-    public void CollPos(){
-        
-        PlayerPrefs.SetFloat("pos",CollectorTrans.position.y);
-        //posText.text = PlayerPrefs.GetFloat("pos",CollectorTrans.position.y).ToString();
-
-        //StartCoroutine(scoreIn(posText));
-    }
 
     IEnumerator scoreIn(Text a){
         for(int i=0; i<8;i++){

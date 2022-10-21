@@ -29,7 +29,7 @@ public class PlaayerMovement : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         
         Vector3 mousePos = Input.mousePosition;
@@ -38,12 +38,12 @@ public class PlaayerMovement : MonoBehaviour
         float vertical=Input.GetAxis("Vertical")*forwardV*Time.deltaTime;
 
         if(PlayerPrefs.GetInt("remote")==0){//MOUSE CONTROL
-            if(TestMode==true){
+            if(TestMode) {
                 this.transform.Translate(0, 0 ,  vertical);
                 if(rotationX<3 && rotationX>-3)
                     this.transform.Translate(horizontal, 0 , /* vertical */ 0 );
             }
-            else if(TestMode==false){
+            else if(!TestMode){
                 this.transform.Translate(0, 0 , forwardV * Time.deltaTime);
                 if(rotationX<=3.1 && rotationX>=-3.1)
                     transform.position=new Vector3(this.transform.position.x,this.transform.position.y, rotationX);
@@ -51,10 +51,10 @@ public class PlaayerMovement : MonoBehaviour
             //posText.text = mousePos.x.ToString() + " " + rotationX.ToString();
         }
 
-        if(PlayerPrefs.GetInt("remote")==1){//KEYBOARD CONTROL
+        if(PlayerPrefs.GetInt("remote") == 1) {//KEYBOARD CONTROL
             if(TestMode==true){
-            this.transform.Translate(0, 0 ,  vertical);
-            if(this.transform.position.z<3 && this.transform.position.z>-3)
+            transform.Translate(0, 0 ,  vertical);
+            if(transform.position.z<3 && this.transform.position.z>-3)
                 this.transform.Translate(horizontal, 0 , /* vertical */ 0 );
         }
         else if(TestMode==false){
@@ -99,11 +99,9 @@ public class PlaayerMovement : MonoBehaviour
         };*/
         
     }
+
     public static float Remap (float value, float from1, float to1, float from2, float to2) {
         return (value - from1) / (to1 - from1) * (to2 - from2) + from2;
     }
-
-
-
 
 }

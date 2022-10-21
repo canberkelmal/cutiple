@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using DG.Tweening;
 
 public class Movement : MonoBehaviour
 {
@@ -22,6 +23,8 @@ public class Movement : MonoBehaviour
     float sqrMaxVelocity;
 
     
+    public Transform Tower;
+    public float swing=0.02f;
     
 
     void Start(){
@@ -33,8 +36,7 @@ public class Movement : MonoBehaviour
     }
     
     
-    void Update (){
-        Debug.Log(rb.velocity.magnitude);
+    void FixedUpdate (){
 
         var v = rb.velocity;
         // Clamp the velocity, if necessary
@@ -61,7 +63,9 @@ public class Movement : MonoBehaviour
 
             
             //this.transform.Translate(0, 0 , forwardV * Time.deltaTime);
+            
             rb.AddForce(force * Time.deltaTime, 0, 0, ForceMode.VelocityChange);
+            
             Vector3 push= mousePos-startPos;
             
             if(mousePos.z<startPos.z&&transform.position.z>-2.8f){
@@ -75,6 +79,26 @@ public class Movement : MonoBehaviour
             
             
         }
+
+        /* if(Tower.transform.childCount>0){
+            for(int i=0;i<transform.childCount;i++){
+                if(i==0){
+                    
+                    
+                    
+                    Tower.transform.GetChild(i).position=new Vector3(transform.position.x,transform.position.y+i,transform.position.z);//Vector3.Lerp(transform.position,MainBox.transform.position , swing);
+                    
+                    //transform.GetChild(i)
+                    //    .DOMove(new Vector3(MainBox.transform.position.x,transform.position.y+i,MainBox.transform.position.z), swing/2);
+                }
+                else{
+                    Tower.transform.GetChild(i)
+                        .DOMove(new Vector3(transform.position.x,transform.position.y+i,transform.position.z), swing*i);
+                    //transform.GetChild(i)
+                    //    .DOMove(new Vector3(transform.GetChild(i-1).position.x,transform.position.y+i,transform.GetChild(i-1).position.z), swing*Time.deltaTime);
+                } 
+            }
+        } */
         
      
 
